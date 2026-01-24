@@ -1,0 +1,65 @@
+Please update the existing site with the following changes only. Do not rebuild the app from scratch.
+
+⸻
+
+Home Page
+	1.	Reduce the size of the main title “Clearline” so it no longer stretches across the full width of the screen.
+	•	Keep the modern business style.
+	•	Retain the moving neon dot / fuse visual flowing through the title.
+	2.	Reduce the size of all text on the home page for a cleaner, more professional layout.
+	3.	Under the subtitle “Future Systems Architect”, add a small call-to-action button:
+	•	Button text:
+“Explore how you can improve your business systems and processes”
+	•	Button action:
+Link to the About page.
+	•	Button style:
+Subtle, modern, not dominant.
+
+⸻
+
+About Page
+	4.	Move the About content so the descriptive text appears directly under the About title.
+	•	Remove the “Why choose us” heading entirely.
+	•	Keep only the explanatory sub-text under the About title.
+	5.	Discovery / Modelling / Deployment / Scaling sections:
+	•	Animate each box so it slides in from the edge of the screen on scroll.
+	•	Change the colours of each box and title so all four are visually distinct.
+	•	Add short explanatory sub-text inside each box explaining what we do at that stage.
+Example intent (do not hardcode wording):
+	•	Discovery → understanding and mapping processes
+	•	Modelling → designing improved workflows
+	•	Deployment → implementing systems
+	•	Scaling → ongoing improvement and optimisation
+
+⸻
+
+Systems & Tools Page
+	6.	Update each system/tool section so:
+	•	Each has its own boxed layout, consistent with the About page style.
+	•	Each box includes:
+	•	A small icon or logo
+	•	A short description explaining:
+	•	What the system is
+	•	How we use it to improve business processes
+	7.	Reduce text size slightly across this page for consistency.
+
+⸻
+
+Contact Page
+	8.	Reduce text size across the page.
+	9.	Add a simple contact form including:
+	•	Name
+	•	Email
+	•	Message
+	•	Submit button
+(No backend processing required at this stage.)
+
+⸻
+
+Global Navigation & Titles
+	10.	Ensure each page title matches exactly the corresponding option in the hamburger menu.
+	11.	Reduce the font size of the hamburger menu options for a cleaner, more subtle navigation experience.
+
+⸻
+
+Please retain existing styling, colours, and structure unless explicitly stated above

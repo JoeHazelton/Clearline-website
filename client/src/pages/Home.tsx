@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: "easeOut" }}
-          className="text-6xl md:text-9xl font-display font-black tracking-wider text-white relative inline-block"
+          className="text-4xl md:text-7xl font-display font-black tracking-wider text-white relative inline-block"
         >
           CLEARLINE
           
@@ -29,7 +30,7 @@ export default function Home() {
               repeat: Infinity,
               repeatDelay: 5
             }}
-            className="absolute top-1/2 -translate-y-1/2 w-2 h-2 bg-primary rounded-full shadow-[0_0_15px_#0ff]"
+            className="absolute top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_15px_#0ff]"
           />
 
           {/* Arrow */}
@@ -37,9 +38,9 @@ export default function Home() {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 4.5, duration: 0.5 }}
-            className="absolute -right-12 top-1/2 -translate-y-1/2 text-primary"
+            className="absolute -right-8 top-1/2 -translate-y-1/2 text-primary"
           >
-            <ChevronRight size={48} strokeWidth={3} />
+            <ChevronRight size={32} strokeWidth={3} />
           </motion.div>
         </motion.h1>
 
@@ -48,7 +49,7 @@ export default function Home() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
-          className="h-[2px] w-full bg-gradient-to-r from-transparent via-primary to-transparent mt-4 mb-6 origin-center"
+          className="h-[2px] w-3/4 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mt-3 mb-4 origin-center"
         />
 
         {/* Tagline */}
@@ -56,10 +57,23 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="text-xl md:text-2xl font-sans font-light tracking-[0.2em] text-white/70 uppercase"
+          className="text-base md:text-lg font-sans font-light tracking-[0.2em] text-white/70 uppercase mb-8"
         >
-          Future Systems Architecture
+          Future Systems Architect
         </motion.p>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 3.5, duration: 0.8 }}
+        >
+          <Link href="/about">
+            <a className="inline-block px-6 py-2 border border-white/20 text-white/60 text-sm hover:text-primary hover:border-primary/50 transition-all duration-300 rounded-sm font-light tracking-wide hover:shadow-[0_0_15px_rgba(0,243,255,0.15)] cursor-pointer">
+              Explore how you can improve your business systems and processes
+            </a>
+          </Link>
+        </motion.div>
       </div>
     </div>
   );

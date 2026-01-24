@@ -36,12 +36,12 @@ export default function Navigation() {
             transition={{ type: "spring", damping: 20, stiffness: 100 }}
             className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md flex flex-col justify-center items-center"
           >
-            <nav className="flex flex-col gap-8 text-center">
+            <nav className="flex flex-col gap-6 text-center">
               {menuItems.map((item) => (
                 <Link key={item.path} href={item.path}>
                   <a
                     onClick={() => setIsOpen(false)}
-                    className={`text-4xl md:text-6xl font-display uppercase tracking-widest hover:text-primary transition-colors cursor-pointer ${
+                    className={`text-3xl md:text-4xl font-display uppercase tracking-widest hover:text-primary transition-colors cursor-pointer ${
                       location === item.path ? "text-primary text-glow" : "text-white/50"
                     }`}
                     data-testid={`link-nav-${item.name.toLowerCase()}`}
