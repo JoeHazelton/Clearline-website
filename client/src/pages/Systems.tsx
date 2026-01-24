@@ -16,47 +16,47 @@ export default function Systems() {
     { 
       name: "Microsoft 365", 
       icon: Grid, 
-      desc: "The backbone of modern enterprise collaboration." 
+      desc: "We configure the full M365 suite to create a unified digital workspace, ensuring your teams have secure, anytime access to the tools they need to collaborate effectively." 
     },
     { 
       name: "Power BI", 
       icon: BarChart3, 
-      desc: "Transforming raw data into actionable visual insights." 
+      desc: "We turn your static spreadsheets into dynamic, interactive dashboards that provide real-time visibility into your KPIs, enabling data-driven decision making." 
     },
     { 
       name: "Power Automate", 
       icon: Bot, 
-      desc: "Automating repetitive tasks to save valuable time." 
+      desc: "We build background workflows that handle your repetitive administrative tasks—approvals, notifications, and data entry—freeing your staff for high-value work." 
     }, 
     { 
       name: "Power Apps", 
       icon: AppWindow, 
-      desc: "Custom low-code applications built for your specific needs." 
+      desc: "We develop custom, low-code applications tailored exactly to your unique business functions, replacing rigid off-the-shelf software with precision tools." 
     },
     { 
       name: "Excel", 
       icon: FileSpreadsheet, 
-      desc: "Advanced modelling and data management solutions." 
+      desc: "We advance your Excel capabilities beyond simple tables, implementing complex data modelling, automated macros, and error-proof templates for financial analysis." 
     },
     { 
       name: "SharePoint", 
       icon: Share2, 
-      desc: "Secure document management and intranet portals." 
+      desc: "We structure secure, organized document management systems and intranets that act as a single source of truth for your organization's knowledge base." 
     }, 
     { 
       name: "Workflow Automation", 
       icon: Workflow, 
-      desc: "Streamlining complex business logic and approvals." 
+      desc: "We map and digitize complex multi-step logic, ensuring compliance and consistency across your operations without manual oversight." 
     },
     { 
       name: "Process Mapping", 
       icon: GitMerge, 
-      desc: "Visualizing and optimizing operational flows." 
+      desc: "We visualize your end-to-end operations to identify bottlenecks and inefficiencies before implementing technical solutions." 
     },
     { 
       name: "Reporting Dashboards", 
       icon: LayoutDashboard, 
-      desc: "Real-time KPIs tracking performance at a glance." 
+      desc: "We centralize your performance metrics into clear, visual command centers that allow leadership to track health and progress at a glance." 
     }
   ];
 
@@ -71,7 +71,7 @@ export default function Systems() {
           Systems <span className="text-primary">&</span> Tools
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {tools.map((tool, index) => (
             <motion.div
               key={tool.name}
@@ -79,16 +79,16 @@ export default function Systems() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
               whileHover={{ y: -5, borderColor: "hsl(var(--primary))" }}
-              className="bg-white/5 border border-white/10 p-6 rounded-lg relative overflow-hidden group cursor-default transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(0,243,255,0.1)]"
+              className="bg-white/5 border border-white/10 p-5 rounded-lg relative overflow-hidden group cursor-default transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(0,243,255,0.1)]"
               data-testid={`card-tool-${tool.name.replace(/\s+/g, '-').toLowerCase()}`}
             >
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-md bg-white/5 text-primary group-hover:bg-primary/20 transition-colors">
-                  <tool.icon size={24} />
+              <div className="flex flex-col items-start gap-3">
+                <div className="p-2.5 rounded-md bg-white/5 text-primary group-hover:bg-primary/20 transition-colors">
+                  <tool.icon size={20} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-display font-semibold mb-2 group-hover:text-primary transition-colors">{tool.name}</h3>
-                  <p className="text-sm text-white/60 font-sans leading-relaxed">{tool.desc}</p>
+                  <h3 className="text-base font-display font-semibold mb-2 group-hover:text-primary transition-colors">{tool.name}</h3>
+                  <p className="text-xs text-white/60 font-sans leading-relaxed">{tool.desc}</p>
                 </div>
               </div>
             </motion.div>

@@ -62,15 +62,19 @@ export default function Home() {
           Future Systems Architect
         </motion.p>
 
-        {/* CTA Button */}
+        {/* CTA Arrow */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.5, duration: 0.8 }}
+          className="mt-8"
         >
           <Link href="/about">
-            <a className="inline-block px-6 py-2 border border-white/20 text-white/60 text-sm hover:text-primary hover:border-primary/50 transition-all duration-300 rounded-sm font-light tracking-wide hover:shadow-[0_0_15px_rgba(0,243,255,0.15)] cursor-pointer">
-              Explore how you can improve your business systems and processes
+            <a className="group flex flex-col items-center gap-2 cursor-pointer transition-all duration-300">
+              <span className="text-white/40 text-xs tracking-widest uppercase group-hover:text-primary transition-colors">Explore</span>
+              <div className="p-3 border border-white/10 rounded-full group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all">
+                <ChevronRight className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" strokeWidth={2} />
+              </div>
             </a>
           </Link>
         </motion.div>

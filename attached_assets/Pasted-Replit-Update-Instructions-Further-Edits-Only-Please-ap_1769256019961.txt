@@ -1,0 +1,60 @@
+Replit Update Instructions – Further Edits Only
+
+Please apply the following changes to the existing site.
+Do not rebuild or redesign unrelated elements.
+
+⸻
+
+Home Page
+	1.	Replace the current button under the sub-text “Explore how you can improve your business systems and processes”:
+	•	Remove the button outline and background entirely.
+	•	Remove the button container.
+	•	Add a clean arrow icon, matching the same colour and style as the arrow used in the title animation.
+	•	The arrow should act as the clickable link to the About page.
+	•	Keep the interaction subtle and modern.
+
+⸻
+
+About Page
+	2.	Reduce the font size of the main explanatory sub-text describing what we do.
+	•	Expand the content slightly to add more clarity and depth (more detail on how we help, not marketing fluff).
+	•	Keep the tone practical and professional.
+	3.	Move the 5-star rating / customer reviews section:
+	•	Position it at the bottom of the About page.
+	•	Keep it visually lighter than the main content.
+
+⸻
+
+Systems Page
+	4.	Reduce the overall size of each system/tool box:
+	•	Make logos slightly smaller.
+	•	Make sub-text more compact and readable.
+	•	Maintain visual consistency across all boxes.
+	5.	Add more descriptive detail inside each system category:
+	•	Explain what each system is used for.
+	•	Explain how it helps improve or streamline business processes.
+	•	Keep descriptions concise and structured.
+
+⸻
+
+Get in Touch Page
+	6.	Add short helper text inside the contact form:
+	•	Place it under the “Send Message” heading.
+	•	Purpose: reassure users and guide their message.
+Example intent (do not hardcode wording):
+Encouraging users to share their business pain points, inefficiencies, or tasks that take time away from running their business.
+	7.	Ensure the “Get in touch” page title:
+	•	Appears on one single line
+	•	Does not wrap onto multiple lines on any screen size.
+
+⸻
+
+Hamburger Menu
+	8.	Reduce the size of all navigation links significantly:
+	•	Smaller font
+	•	Cleaner spacing
+	•	Subtle and unobtrusive appearance
+
+⸻
+
+Please retain existing animations, colours, layouts, and structure unless explicitly stated above

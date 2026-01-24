@@ -28,9 +28,8 @@ export default function Contact() {
           animate={{ opacity: 1, x: 0 }}
           className="space-y-10"
         >
-          <div>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-2">Get in</h2>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-primary text-glow">Touch</h2>
+          <div className="whitespace-nowrap">
+            <h2 className="text-4xl md:text-6xl font-display font-bold mb-2">Get in <span className="text-primary text-glow">Touch</span></h2>
           </div>
 
           <div className="space-y-6 font-sans text-base">
@@ -90,7 +89,12 @@ export default function Contact() {
           transition={{ delay: 0.2 }}
           className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
         >
-          <h3 className="text-2xl font-display font-semibold mb-6 text-white/90">Send Message</h3>
+          <div className="mb-8">
+            <h3 className="text-2xl font-display font-semibold text-white/90 mb-2">Send Message</h3>
+            <p className="text-sm text-white/50 font-sans">
+              Tell us about the tasks that slow you down. What inefficiencies are holding your business back?
+            </p>
+          </div>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm text-white/60 font-sans">Name</label>

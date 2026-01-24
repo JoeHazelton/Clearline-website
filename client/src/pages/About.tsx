@@ -49,18 +49,13 @@ export default function About() {
             About <span className="text-primary">Clearline</span>
           </h2>
           
-          <p className="text-lg text-white/70 font-sans leading-relaxed max-w-3xl ml-7">
-            We don't just build systems; we engineer future-proof architectures that evolve with your business. 
-            Our approach merges technical precision with creative problem-solving, ensuring every solution is purely bespoke.
-          </p>
-
-          <div className="pt-4 ml-7">
-            <div className="flex gap-1 text-primary mb-2">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} fill="currentColor" className="w-4 h-4 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]" />
-              ))}
-            </div>
-            <p className="text-xs text-white/40 font-mono tracking-widest">5-STAR RATED EXCELLENCE</p>
+          <div className="max-w-4xl ml-7 space-y-4">
+            <p className="text-base text-white/70 font-sans leading-relaxed">
+              We engineer intelligent business architectures that eliminate operational friction. By auditing your existing workflows, we identify bottlenecks and replace manual redundancy with automated precision.
+            </p>
+            <p className="text-base text-white/70 font-sans leading-relaxed">
+              Our focus is purely practical: connecting your fragmented data sources, automating repetitive tasks, and building scalable systems that allow your team to focus on high-value work rather than administration.
+            </p>
           </div>
         </div>
 
@@ -79,6 +74,15 @@ export default function About() {
               <p className="text-white/60 font-sans text-sm leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-20 border-t border-white/10 pt-12 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity duration-500">
+          <div className="flex gap-1 text-primary mb-3">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star key={star} fill="currentColor" className="w-4 h-4 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]" />
+            ))}
+          </div>
+          <p className="text-xs text-white/40 font-mono tracking-widest uppercase">Trusted by industry leaders for excellence in system design</p>
         </div>
       </motion.section>
     </div>
