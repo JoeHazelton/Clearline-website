@@ -99,17 +99,14 @@ export default function Systems() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-center py-8 border-t border-white/10"
+          className="text-center py-8 border-t border-white/10 max-w-3xl mx-auto"
         >
-          <p className="text-xl md:text-2xl font-display mb-6 leading-tight text-white/80">
-            Is your current system held together by <span className="text-primary font-bold">hope</span> and <span className="text-primary font-bold">sticky notes</span>?
+          <p className="text-lg md:text-xl font-sans mb-4 text-white/80 leading-relaxed">
+            It's okay if your current system is held together by hope and sticky notes. Most businesses start there.
           </p>
-          <button 
-            className="cursor-pointer bg-transparent border border-primary text-primary px-8 py-3 text-base font-bold tracking-widest hover:bg-primary hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(0,243,255,0.1)] hover:shadow-[0_0_30px_rgba(0,243,255,0.4)] uppercase"
-            data-testid="button-cta-systems"
-          >
-            Fix My Workflow
-          </button>
+          <p className="text-sm md:text-base text-white/50 font-sans">
+            We focus on clarity, structure, and incremental improvement. Let's discuss your real operational challenges—no buzzwords, just practical next steps.
+          </p>
         </motion.div>
       </motion.div>
     </div>

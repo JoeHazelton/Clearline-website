@@ -1,0 +1,63 @@
+Replit Update Instructions – Amend Existing Site
+
+Please apply the following updates to the current website design and content.
+
+⸻
+
+About Page Updates
+	1.	Add a new section below the four core topics (Discovery, Modelling, Deployment, Scaling)
+	•	Title this section: “Values & Philosophy”
+	•	Purpose: explain how and why we work, not just what we do
+	•	Add concise but meaningful text that covers:
+	•	We believe systems should reduce cognitive load, not add to it
+	•	Practical, outcome-driven solutions over theoretical complexity
+	•	Automation and structure should serve people, not replace them
+	•	Long-term scalability over short-term fixes
+	2.	Update and refine the existing paragraph below (replace current wording with a clearer, stronger version):
+Replace the current text with something aligned to:
+	•	Engineering intelligent, practical business architectures
+	•	Auditing real workflows to remove friction
+	•	Eliminating manual repetition and admin overhead
+	•	Connecting fragmented systems into a single, reliable flow
+	•	Helping teams spend time on high-value work, not administration
+Tone: confident, practical, expert-led (not marketing-heavy).
+	3.	Add a “Who’s Behind Clearline” subsection
+	•	Brief paragraph explaining:
+	•	The business is run by industry-leading practitioners
+	•	Years of experience across multiple industries
+	•	First-hand exposure to the operational pain SMEs face
+	•	Built by people who have worked inside complex, real-world environments
+	•	Focused on solving problems we’ve personally encountered
+Keep this human, credible, and reassuring — not corporate.
+
+⸻
+
+Systems & Tools Page Updates
+	4.	Update the bottom section currently showing:
+“Is your current system held together by hope and sticky notes?
+FIX MY WORKFLOW”
+
+Please:
+	•	Reduce the text size significantly (this should not dominate the page)
+	•	Replace with supportive, practical subtext such as:
+	•	A short reassurance that most businesses start this way
+	•	Emphasis on clarity, structure, and incremental improvement
+	•	Invitation to discuss real operational challenges, not buzzwords
+Tone: calm, supportive, expert — not salesy.
+
+⸻
+
+Hamburger Menu Updates
+	5.	Reduce hamburger menu text size
+	•	When the menu is opened:
+	•	All navigation links should be noticeably smaller
+	•	Maintain readability but remove the oversized appearance
+	•	Ensure it feels clean, modern, and unobtrusive
+This should visually match a professional B2B consulting site.
+
+⸻
+
+General Guidance
+	•	Do not change the overall colour palette or layout structure
+	•	Maintain existing animations and transitions unless affected by text resizing
+	•	Prioritise clarity, hierarchy, and readability over visual noise

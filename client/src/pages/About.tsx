@@ -51,10 +51,10 @@ export default function About() {
           
           <div className="max-w-4xl ml-7 space-y-4">
             <p className="text-base text-white/70 font-sans leading-relaxed">
-              We engineer intelligent business architectures that eliminate operational friction. By auditing your existing workflows, we identify bottlenecks and replace manual redundancy with automated precision.
+              We engineer intelligent, practical business architectures that eliminate operational friction. By auditing your real-world workflows, we identify bottlenecks and replace manual redundancy with automated precision.
             </p>
             <p className="text-base text-white/70 font-sans leading-relaxed">
-              Our focus is purely practical: connecting your fragmented data sources, automating repetitive tasks, and building scalable systems that allow your team to focus on high-value work rather than administration.
+              Our focus is purely practical: connecting your fragmented systems into a single, reliable flow that allows your team to spend time on high-value work, not administration.
             </p>
           </div>
         </div>
@@ -75,6 +75,40 @@ export default function About() {
             </motion.div>
           ))}
         </div>
+
+        {/* Values & Philosophy Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20 grid md:grid-cols-2 gap-12 items-start"
+        >
+          <div>
+            <h3 className="text-3xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
+              Values & <span className="text-primary">Philosophy</span>
+            </h3>
+            <div className="space-y-4 ml-7 text-white/70 font-sans">
+              <p>We believe systems should reduce cognitive load, not add to it. Technology must serve the people using it, never the other way around.</p>
+              <p>We prioritize practical, outcome-driven solutions over theoretical complexity. If it doesn't solve a real problem, we don't build it.</p>
+              <p>Automation and structure are designed to support your team, not replace them—allowing people to do what they do best, while machines handle the rest.</p>
+              <p>We build for long-term scalability, ensuring the foundations we lay today continue to support your growth for years to come.</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
+              Who's Behind <span className="text-primary">Clearline</span>
+            </h3>
+            <div className="space-y-4 ml-7 text-white/70 font-sans">
+              <p>
+                Clearline is run by industry-leading practitioners with years of hands-on experience across multiple sectors. We have first-hand exposure to the operational pain points that SMEs face every day.
+              </p>
+              <p>
+                We aren't just consultants; we are builders who have worked inside complex, real-world environments. Our solutions are born from solving the very problems we've personally encountered, ensuring they are grounded in reality, not theory.
+              </p>
+            </div>
+          </div>
+        </motion.div>
 
         <div className="mt-20 border-t border-white/10 pt-12 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity duration-500">
           <div className="flex gap-1 text-primary mb-3">
