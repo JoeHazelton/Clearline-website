@@ -57,9 +57,19 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="text-base md:text-lg font-sans font-light tracking-[0.2em] text-white/70 uppercase mb-8"
+          className="text-base md:text-lg font-sans font-light tracking-[0.2em] text-white/70 uppercase mb-4"
         >
           Future Systems Architect
+        </motion.p>
+
+        {/* Subtext */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 4.2, duration: 1.5, ease: "easeOut" }}
+          className="text-sm md:text-base font-sans text-white/50 max-w-lg mx-auto leading-relaxed mb-6"
+        >
+          Identifying operational friction so business owners can focus on the work that matters.
         </motion.p>
 
         {/* CTA Arrow */}

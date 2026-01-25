@@ -67,9 +67,18 @@ export default function Systems() {
         animate={{ opacity: 1 }}
         className="w-full"
       >
-        <h2 className="text-3xl md:text-5xl font-display font-bold mb-12 text-right border-r-4 border-primary pr-6">
+        <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-right border-r-4 border-primary pr-6">
           Systems <span className="text-primary">&</span> Tools
         </h2>
+        
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 1 }}
+          className="text-right text-sm md:text-base text-white/60 font-sans mb-12 max-w-2xl ml-auto pr-6"
+        >
+          We work across a carefully selected set of platforms and tools to simplify workflows, connect data, and reduce operational friction.
+        </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {tools.map((tool, index) => (
