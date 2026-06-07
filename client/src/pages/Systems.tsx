@@ -8,11 +8,17 @@ import {
   Share2, 
   Bot, 
   GitMerge, 
-  LayoutDashboard 
+  LayoutDashboard,
+  Brain
 } from "lucide-react";
 
 export default function Systems() {
   const tools = [
+    {
+      name: "AI Integration",
+      icon: Brain,
+      desc: "We identify opportunities to embed practical artificial intelligence throughout your business operations. From intelligent document processing and automated customer communications to AI-powered reporting, knowledge management, and decision support, we implement solutions that reduce manual effort, improve accuracy, and unlock new levels of efficiency. Our focus is always on real business outcomes—not technology for technology’s sake."
+    },
     { 
       name: "Microsoft 365", 
       icon: Grid, 
