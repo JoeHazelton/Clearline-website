@@ -51,10 +51,10 @@ export default function About() {
           
           <div className="max-w-4xl ml-7 space-y-4">
             <p className="text-base text-white/70 font-sans leading-relaxed">
-              We engineer intelligent, practical business architectures that eliminate operational friction. By auditing your real-world workflows, we identify bottlenecks and replace manual redundancy with automated precision.
+              We engineer intelligent, practical business architectures that eliminate operational friction. By deeply integrating AI and advanced automation into your workflows, we identify bottlenecks and replace manual redundancy with intelligent precision.
             </p>
             <p className="text-base text-white/70 font-sans leading-relaxed">
-              Our focus is purely practical: connecting your fragmented systems into a single, reliable flow that allows your team to spend time on high-value work, not administration.
+              Our focus is purely practical: connecting your fragmented systems into a single, reliable flow powered by artificial intelligence. We build autonomous systems that allow your team to spend time on high-value, strategic work, rather than routine administration.
             </p>
           </div>
         </div>
