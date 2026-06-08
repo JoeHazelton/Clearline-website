@@ -41,7 +41,7 @@ export default function Navigation() {
                 <Link key={item.path} href={item.path}>
                   <a
                     onClick={() => setIsOpen(false)}
-                    className={`text-xl md:text-2xl font-display uppercase tracking-widest hover:text-primary transition-colors cursor-pointer font-light ${
+                    className={`text-lg md:text-xl font-display uppercase tracking-widest hover:text-primary transition-colors cursor-pointer font-light ${
                       location === item.path ? "text-primary text-glow font-medium" : "text-white/60"
                     }`}
                     data-testid={`link-nav-${item.name.toLowerCase()}`}
