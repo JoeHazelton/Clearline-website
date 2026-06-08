@@ -84,7 +84,7 @@ export default function About() {
           className="mb-20 grid md:grid-cols-2 gap-12 items-start"
         >
           <div>
-            <h3 className="text-3xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
+            <h3 className="text-2xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
               Values & <span className="text-primary">Philosophy</span>
             </h3>
             <div className="space-y-4 ml-7 text-white/70 font-sans">
@@ -96,7 +96,7 @@ export default function About() {
           </div>
 
           <div>
-            <h3 className="text-3xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
+            <h3 className="text-2xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
               Who's Behind <span className="text-primary">Clearline</span>
             </h3>
             <div className="space-y-4 ml-7 text-white/70 font-sans">

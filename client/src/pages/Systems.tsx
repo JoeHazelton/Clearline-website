@@ -83,7 +83,7 @@ export default function Systems() {
           transition={{ delay: 0.2, duration: 1 }}
           className="text-right text-sm md:text-base text-white/60 font-sans mb-12 max-w-2xl ml-auto pr-6"
         >
-          We work across a carefully selected set of platforms and tools to simplify workflows, connect data, and reduce operational friction.
+          We work across a carefully selected ecosystem of platforms, automation tools, and business systems designed to improve efficiency, visibility, and scalability. By combining modern technologies with practical operational expertise, we help businesses eliminate manual processes, connect fragmented data, automate repetitive tasks, and create reliable workflows that support long-term growth. Every tool we implement is selected for a specific purpose: delivering measurable improvements to the way your business operates.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">

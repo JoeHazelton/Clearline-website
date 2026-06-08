@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", company: "", interest: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ export default function Contact() {
       title: "Message Sent",
       description: "Thanks for reaching out! We'll get back to you soon.",
     });
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", company: "", interest: "", message: "" });
   };
 
   return (
@@ -90,7 +90,7 @@ export default function Contact() {
           className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
         >
           <div className="mb-8">
-            <h3 className="text-2xl font-display font-semibold text-white/90 mb-2">Contact / Business Review Request</h3>
+            <h3 className="text-xl font-display font-semibold text-white/90 mb-2">Contact / Business Review Request</h3>
             <p className="text-sm text-white/50 font-sans">
               Tell us about the tasks that slow you down. What inefficiencies are holding your business back?
             </p>
@@ -120,9 +120,44 @@ export default function Contact() {
                 placeholder="joe@example.com"
               />
             </div>
+
+            <div className="space-y-2">
+              <label htmlFor="company" className="text-sm text-white/60 font-sans">Company Name (Optional)</label>
+              <Input 
+                id="company"
+                value={formData.company}
+                onChange={(e) => setFormData({...formData, company: e.target.value})}
+                className="bg-black/20 border-white/10 focus:border-primary text-white"
+                placeholder="Your company"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="interest" className="text-sm text-white/60 font-sans">Area of Interest (Optional)</label>
+              <select
+                id="interest"
+                value={formData.interest}
+                onChange={(e) => setFormData({...formData, interest: e.target.value})}
+                className="flex h-10 w-full rounded-md border bg-black/20 border-white/10 focus:border-primary text-white px-3 py-2 text-sm placeholder:text-muted-foreground focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <option value="" disabled hidden>Select an area...</option>
+                <option value="AI Integration" className="bg-zinc-900 text-white">AI Integration</option>
+                <option value="Business Process Review" className="bg-zinc-900 text-white">Business Process Review</option>
+                <option value="Workflow Automation" className="bg-zinc-900 text-white">Workflow Automation</option>
+                <option value="Reporting & Dashboards" className="bg-zinc-900 text-white">Reporting & Dashboards</option>
+                <option value="Microsoft 365" className="bg-zinc-900 text-white">Microsoft 365</option>
+                <option value="Power BI" className="bg-zinc-900 text-white">Power BI</option>
+                <option value="Power Automate" className="bg-zinc-900 text-white">Power Automate</option>
+                <option value="Power Apps" className="bg-zinc-900 text-white">Power Apps</option>
+                <option value="General Enquiry" className="bg-zinc-900 text-white">General Enquiry</option>
+              </select>
+            </div>
             
             <div className="space-y-2">
-              <label htmlFor="message" className="text-sm text-white/60 font-sans">Message</label>
+              <label htmlFor="message" className="text-sm text-white/60 font-sans flex flex-col gap-1">
+                <span>Message</span>
+                <span className="text-xs text-white/40 italic">Provide a brief overview of your current processes, challenges, or goals and we'll review how Clearline may be able to help.</span>
+              </label>
               <Textarea 
                 id="message"
                 value={formData.message}

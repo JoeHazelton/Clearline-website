@@ -1,0 +1,57 @@
+Please make the following updates while keeping all existing styling, colours, layout, animations, spacing, responsiveness, and functionality unchanged unless specifically requested below.
+
+ABOUT PAGE
+
+1. Reduce the size of the “Values & Philosophy” heading slightly so it is visually consistent with the rest of the page sections.
+2. Reduce the size of the “Who’s Behind Clearline” heading slightly by the same amount.
+3. Do not modify any of the body text or page layout.
+
+SYSTEMS & TOOLS PAGE
+
+1. Keep the main page heading unchanged.
+2. Replace the existing introductory paragraph:
+
+“We work across a carefully selected set of platforms and tools to simplify workflows, connect data, and reduce operational friction.”
+
+with:
+
+“We work across a carefully selected ecosystem of platforms, automation tools, and business systems designed to improve efficiency, visibility, and scalability. By combining modern technologies with practical operational expertise, we help businesses eliminate manual processes, connect fragmented data, automate repetitive tasks, and create reliable workflows that support long-term growth. Every tool we implement is selected for a specific purpose: delivering measurable improvements to the way your business operates.”
+
+3. Preserve all existing styling and formatting.
+
+CONTACT PAGE
+
+1. Reduce the size of the “Contact / Business Review Request” heading slightly while maintaining the existing design language.
+2. Keep the existing Name, Email and Message fields.
+3. Add the following optional fields above the Message field:
+
+Field Label:
+Company Name
+
+Field Type:
+Single-line text input
+
+Field Label:
+Area of Interest
+
+Field Type:
+Dropdown
+
+Dropdown Options:
+
+* AI Integration
+* Business Process Review
+* Workflow Automation
+* Reporting & Dashboards
+* Microsoft 365
+* Power BI
+* Power Automate
+* Power Apps
+* General Enquiry
+
+4. Add a small helper text above the message box:
+
+“Provide a brief overview of your current processes, challenges, or goals and we’ll review how Clearline may be able to help.”
+
+5. Ensure all new fields match the existing styling of the contact form.
+6. Do not change any other functionality or content on the page.
