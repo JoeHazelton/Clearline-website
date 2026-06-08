@@ -20,6 +20,16 @@ export default function Systems() {
       desc: "We identify opportunities to embed practical artificial intelligence throughout your business operations. From intelligent document processing and automated customer communications to AI-powered reporting, knowledge management, and decision support, we implement solutions that reduce manual effort, improve accuracy, and unlock new levels of efficiency. Our focus is always on real business outcomes—not technology for technology’s sake."
     },
     { 
+      name: "Process Mapping", 
+      icon: GitMerge, 
+      desc: "We visualize your end-to-end operations to identify bottlenecks and inefficiencies before implementing technical solutions." 
+    },
+    { 
+      name: "Workflow Automation", 
+      icon: Workflow, 
+      desc: "We map and digitize complex multi-step logic, ensuring compliance and consistency across your operations without manual oversight." 
+    },
+    { 
       name: "Microsoft 365", 
       icon: Grid, 
       desc: "We configure the full M365 suite to create a unified digital workspace, ensuring your teams have secure, anytime access to the tools they need to collaborate effectively." 
@@ -49,16 +59,6 @@ export default function Systems() {
       icon: Share2, 
       desc: "We structure secure, organized document management systems and intranets that act as a single source of truth for your organization's knowledge base." 
     }, 
-    { 
-      name: "Workflow Automation", 
-      icon: Workflow, 
-      desc: "We map and digitize complex multi-step logic, ensuring compliance and consistency across your operations without manual oversight." 
-    },
-    { 
-      name: "Process Mapping", 
-      icon: GitMerge, 
-      desc: "We visualize your end-to-end operations to identify bottlenecks and inefficiencies before implementing technical solutions." 
-    },
     { 
       name: "Reporting Dashboards", 
       icon: LayoutDashboard, 

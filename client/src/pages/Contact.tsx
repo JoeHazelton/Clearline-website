@@ -38,9 +38,9 @@ export default function Contact() {
               <span data-testid="text-address">Maldon, Essex, United Kingdom</span>
             </div>
             
-            <a href="mailto:Joe.hazelton@icloud.com" className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors" data-testid="link-email">
+            <a href="mailto:Joe@clear-line.io" className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors" data-testid="link-email">
               <Mail className="w-5 h-5 text-primary" />
-              <span>Joe.hazelton@icloud.com</span>
+              <span>Joe@clear-line.io</span>
             </a>
             
             <a href="tel:07710840036" className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors" data-testid="link-phone">
@@ -90,7 +90,7 @@ export default function Contact() {
           className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
         >
           <div className="mb-8">
-            <h3 className="text-2xl font-display font-semibold text-white/90 mb-2">Send Message</h3>
+            <h3 className="text-2xl font-display font-semibold text-white/90 mb-2">Contact / Business Review Request</h3>
             <p className="text-sm text-white/50 font-sans">
               Tell us about the tasks that slow you down. What inefficiencies are holding your business back?
             </p>
