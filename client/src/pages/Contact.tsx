@@ -14,19 +14,39 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Basic validation (also enforced by HTML required attributes)
     if (!formData.name || !formData.email || !formData.message) return;
 
     setIsLoading(true);
 
-    // Simulate API delay for the frontend prototype
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
+      });
 
-    setIsLoading(false);
-    toast({
-      title: "Message Sent — we'll be in touch shortly.",
-    });
-    setFormData({ name: "", email: "", company: "", interest: "", message: "" });
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      toast({
+        title: "Message Sent — we'll be in touch shortly.",
+      });
+      setFormData({ name: "", email: "", company: "", interest: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
