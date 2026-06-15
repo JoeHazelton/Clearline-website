@@ -9,12 +9,22 @@ import { useToast } from "@/hooks/use-toast";
 export default function Contact() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", company: "", interest: "", message: "" });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic validation (also enforced by HTML required attributes)
+    if (!formData.name || !formData.email || !formData.message) return;
+
+    setIsLoading(true);
+
+    // Simulate API delay for the frontend prototype
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    setIsLoading(false);
     toast({
-      title: "Message Sent",
-      description: "Thanks for reaching out! We'll get back to you soon.",
+      title: "Message Sent — we'll be in touch shortly.",
     });
     setFormData({ name: "", email: "", company: "", interest: "", message: "" });
   };
@@ -170,10 +180,11 @@ export default function Contact() {
 
             <Button 
               type="submit" 
-              className="w-full bg-primary text-black hover:bg-cyan-400 font-bold tracking-wide transition-all shadow-[0_0_15px_rgba(0,243,255,0.2)] hover:shadow-[0_0_25px_rgba(0,243,255,0.4)]"
+              disabled={isLoading}
+              className="w-full bg-primary text-black hover:bg-cyan-400 font-bold tracking-wide transition-all shadow-[0_0_15px_rgba(0,243,255,0.2)] hover:shadow-[0_0_25px_rgba(0,243,255,0.4)] disabled:opacity-70 disabled:cursor-not-allowed"
             >
               <Send className="w-4 h-4 mr-2" />
-              SEND MESSAGE
+              {isLoading ? "SENDING..." : "SEND MESSAGE"}
             </Button>
           </form>
         </motion.div>
