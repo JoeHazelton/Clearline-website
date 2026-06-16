@@ -22,12 +22,10 @@ export default function Contact() {
       const response = await fetch("https://formspree.io/f/mnjywrjg", {
         method: "POST",
         headers: {
+          "Accept": "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
