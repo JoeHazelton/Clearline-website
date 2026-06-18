@@ -77,7 +77,7 @@ export default function Contact() {
           className="space-y-10"
         >
           <div className="whitespace-nowrap">
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-2">
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-2">
               Get in <span className="text-primary text-glow">Touch</span>
             </h2>
           </div>
@@ -91,12 +91,12 @@ export default function Contact() {
             </div>
 
             <a
-              href="mailto:Joe@clear-line.io"
+              href="mailto:info@clear-line.io"
               className="flex items-center gap-4 text-white/80 hover:text-primary transition-colors"
               data-testid="link-email"
             >
               <Mail className="w-5 h-5 text-primary" />
-              <span>Joe@clear-line.io</span>
+              <span>info@clear-line.io</span>
             </a>
 
             <a
@@ -157,13 +157,28 @@ export default function Contact() {
           </motion.div>
         </motion.div>
 
-        {/* Contact Form */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-          className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
-        >
+        <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1 }}
+            className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
+          >
+            <h3 className="text-xl font-display font-semibold text-white/90 mb-3">
+              What Happens Next?
+            </h3>
+            <p className="text-sm text-white/60 font-sans leading-relaxed">
+              Once we receive your enquiry, we’ll review your requirements and arrange an initial conversation to understand your current processes, challenges, and goals. If there’s a good fit, we’ll outline practical recommendations and potential next steps.
+            </p>
+          </motion.div>
+
+          {/* Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
+          >
           <div className="mb-8">
             <h3 className="text-xl font-display font-semibold text-white/90 mb-2">
               Contact / Business Review Request
@@ -331,6 +346,7 @@ export default function Contact() {
             </Button>
           </form>
         </motion.div>
+        </div>
       </div>
     </div>
   );

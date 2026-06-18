@@ -45,7 +45,7 @@ export default function About() {
         className="mb-20"
       >
         <div className="mb-12">
-          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-white border-l-4 border-primary pl-6">
+          <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-white border-l-4 border-primary pl-6">
             About <span className="text-primary">Clearline</span>
           </h2>
           
@@ -110,13 +110,10 @@ export default function About() {
           </div>
         </motion.div>
 
-        <div className="mt-20 border-t border-white/10 pt-12 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity duration-500">
-          <div className="flex gap-1 text-primary mb-3">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star key={star} fill="currentColor" className="w-4 h-4 drop-shadow-[0_0_5px_rgba(0,243,255,0.5)]" />
-            ))}
-          </div>
-          <p className="text-xs text-white/40 font-mono tracking-widest uppercase">Trusted by industry leaders for excellence in system design</p>
+        <div className="mt-20 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl font-sans text-white/70 leading-relaxed">
+            Every business has untapped potential hidden within its processes. Our role is to uncover inefficiencies, simplify complexity, and build systems that create lasting operational clarity.
+          </p>
         </div>
       </motion.section>
     </div>
