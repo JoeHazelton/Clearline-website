@@ -47,6 +47,11 @@ export default function Contact() {
         throw new Error("Failed to send message");
       }
 
+      // Fire Meta Pixel Lead event on successful submission
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'Lead');
+      }
+
       toast({
         title: "Message Sent — we'll be in touch shortly.",
       });
