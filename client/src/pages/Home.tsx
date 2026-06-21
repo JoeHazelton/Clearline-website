@@ -8,18 +8,18 @@ export default function Home() {
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 text-center px-4 flex flex-col items-center pt-8">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center pt-8 -mt-16 md:-mt-24">
         {/* Logo Image Wrapper (Cropped to remove transparent padding) */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="w-[220px] md:w-[260px] h-[110px] md:h-[130px] overflow-hidden flex items-center justify-center mb-2 md:mb-3 mt-8"
+          className="w-[200px] md:w-[230px] h-[120px] md:h-[140px] overflow-hidden flex items-center justify-center mb-1 md:mb-2 mt-8"
         >
           <img
             src="/Clear-line Logo Transparent.png"
             alt="Clearline Logo"
-            className="w-full h-auto object-center scale-[1.6] md:scale-[1.7] translate-y-4 md:translate-y-5"
+            className="w-full h-auto object-center scale-[1.4] md:scale-[1.5] translate-y-2"
           />
         </motion.div>
 
