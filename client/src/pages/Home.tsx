@@ -14,12 +14,12 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="w-[300px] md:w-[380px] h-[60px] md:h-[75px] overflow-hidden flex items-center justify-center mb-0 mt-8"
+          className="w-[220px] md:w-[260px] h-[110px] md:h-[130px] overflow-hidden flex items-center justify-center mb-2 md:mb-3 mt-8"
         >
           <img
             src="/Clear-line Logo Transparent.png"
             alt="Clearline Logo"
-            className="w-full h-auto object-center scale-[2.2] md:scale-[2.4] translate-y-2 md:translate-y-3"
+            className="w-full h-auto object-center scale-[1.6] md:scale-[1.7] translate-y-4 md:translate-y-5"
           />
         </motion.div>
 
