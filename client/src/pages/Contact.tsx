@@ -226,7 +226,7 @@ export default function Contact() {
                 }
                 required
                 className="bg-black/20 border-white/10 focus:border-primary text-white"
-                placeholder="joe@example.com"
+                placeholder="query@example.com"
               />
             </div>
 

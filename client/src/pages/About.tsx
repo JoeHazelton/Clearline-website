@@ -111,7 +111,7 @@ export default function About() {
         </motion.div>
 
         <div className="mt-20 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
-          <p className="text-base font-sans text-white/60 leading-relaxed">
+          <p className="text-sm md:text-base text-white/50 font-sans">
             Every business has untapped potential hidden within its processes. Our role is to uncover inefficiencies, simplify complexity, and build systems that create lasting operational clarity.
           </p>
         </div>
