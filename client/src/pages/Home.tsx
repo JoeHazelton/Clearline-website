@@ -9,15 +9,19 @@ export default function Home() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 text-center px-4 flex flex-col items-center pt-8">
-        {/* Logo Image */}
-        <motion.img
-          src="/Clear-line Logo Transparent.png"
-          alt="Clearline Logo"
+        {/* Logo Image Wrapper (Cropped to remove transparent padding) */}
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="w-[300px] md:w-[380px] -mb-4 md:-mb-6"
-        />
+          className="w-[300px] md:w-[380px] h-[60px] md:h-[75px] overflow-hidden flex items-center justify-center mb-0 mt-8"
+        >
+          <img
+            src="/Clear-line Logo Transparent.png"
+            alt="Clearline Logo"
+            className="w-full h-auto object-center scale-[2.2] md:scale-[2.4] translate-y-2 md:translate-y-3"
+          />
+        </motion.div>
 
         {/* Logo Text */}
         <motion.h1
