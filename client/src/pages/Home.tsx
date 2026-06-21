@@ -13,10 +13,10 @@ export default function Home() {
         <motion.img
           src="/Clear-line Logo Transparent.png"
           alt="Clearline Logo"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 4.2, duration: 1.5, ease: "easeOut" }}
-          className="w-[85px] md:w-[110px] mb-8"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 3, duration: 0.8 }}
+          className="w-[150px] md:w-[190px] mb-10"
         />
 
         {/* Logo Text */}
