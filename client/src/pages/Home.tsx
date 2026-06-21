@@ -16,7 +16,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3, duration: 0.8 }}
-          className="w-[300px] md:w-[380px] mb-12"
+          className="w-[300px] md:w-[380px] mb-4"
         />
 
         {/* Logo Text */}
