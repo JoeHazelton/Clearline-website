@@ -9,7 +9,9 @@ import {
   Bot, 
   GitMerge, 
   LayoutDashboard,
-  Brain
+  Brain,
+  Cloud,
+  FileText
 } from "lucide-react";
 
 export default function Systems() {
@@ -17,52 +19,62 @@ export default function Systems() {
     {
       name: "AI Integration",
       icon: Brain,
-      desc: "We identify opportunities to embed practical artificial intelligence throughout your business operations. From intelligent document processing and automated customer communications to AI-powered reporting, knowledge management, and decision support, we implement solutions that reduce manual effort, improve accuracy, and unlock new levels of efficiency. Our focus is always on real business outcomes—not technology for technology’s sake."
+      desc: "Practical AI solutions are applied where they create genuine business value. From reducing manual tasks to supporting faster decisions, AI becomes part of a smarter operating model."
     },
     { 
       name: "Process Mapping", 
       icon: GitMerge, 
-      desc: "We visualize your end-to-end operations to identify bottlenecks and inefficiencies before implementing technical solutions." 
+      desc: "End-to-end business processes are visualised to identify bottlenecks, duplication, and unnecessary manual effort. Clear maps create the foundation for practical improvement." 
     },
     { 
       name: "Workflow Automation", 
       icon: Workflow, 
-      desc: "We map and digitize complex multi-step logic, ensuring compliance and consistency across your operations without manual oversight." 
+      desc: "Multi-step workflows can be mapped, digitised, and automated to reduce delays and manual handovers. Processes become more consistent, visible, and easier to manage." 
     },
     { 
       name: "Microsoft 365", 
       icon: Grid, 
-      desc: "We configure the full M365 suite to create a unified digital workspace, ensuring your teams have secure, anytime access to the tools they need to collaborate effectively." 
+      desc: "The Microsoft 365 suite creates a connected digital workspace for communication, collaboration, and secure document access. Teams gain a reliable foundation for day-to-day operations." 
+    },
+    { 
+      name: "Google Workspace", 
+      icon: Cloud, 
+      desc: "Google Workspace supports cloud-based collaboration across documents, email, calendars, and shared files. It can be structured to improve visibility, consistency, and team productivity." 
     },
     { 
       name: "Power BI", 
       icon: BarChart3, 
-      desc: "We turn your static spreadsheets into dynamic, interactive dashboards that provide real-time visibility into your KPIs, enabling data-driven decision making." 
+      desc: "Static spreadsheets are transformed into interactive dashboards with clear visibility of key performance indicators. Leaders can track performance and make better decisions with confidence." 
     },
     { 
       name: "Power Automate", 
       icon: Bot, 
-      desc: "We build background workflows that handle your repetitive administrative tasks—approvals, notifications, and data entry—freeing your staff for high-value work." 
+      desc: "Repetitive administrative tasks such as approvals, notifications, and data movement can run automatically in the background. This reduces manual effort and improves consistency." 
     }, 
     { 
       name: "Power Apps", 
       icon: AppWindow, 
-      desc: "We develop custom, low-code applications tailored exactly to your unique business functions, replacing rigid off-the-shelf software with precision tools." 
+      desc: "Custom low-code applications can replace clunky spreadsheets and rigid off-the-shelf tools. Business processes become easier to manage, update, and scale." 
+    },
+    { 
+      name: "Notion", 
+      icon: FileText, 
+      desc: "Notion can bring processes, notes, project information, and internal knowledge into one flexible workspace. It is useful for creating lightweight operating systems for growing teams." 
     },
     { 
       name: "Excel", 
       icon: FileSpreadsheet, 
-      desc: "We advance your Excel capabilities beyond simple tables, implementing complex data modelling, automated macros, and error-proof templates for financial analysis." 
+      desc: "Excel can be strengthened with structured templates, automation, data modelling, and reporting logic. Existing spreadsheets become more reliable, useful, and easier to maintain." 
     },
     { 
       name: "SharePoint", 
       icon: Share2, 
-      desc: "We structure secure, organized document management systems and intranets that act as a single source of truth for your organization's knowledge base." 
+      desc: "Secure document libraries and team spaces create a single source of truth for business information. Files, processes, and knowledge become easier to organise and access." 
     }, 
     { 
       name: "Reporting Dashboards", 
       icon: LayoutDashboard, 
-      desc: "We centralize your performance metrics into clear, visual command centers that allow leadership to track health and progress at a glance." 
+      desc: "Performance data is centralised into clear visual dashboards that support faster decision-making. Teams can monitor progress, trends, and operational health at a glance." 
     }
   ];
 
@@ -116,10 +128,7 @@ export default function Systems() {
           transition={{ delay: 0.5 }}
           className="text-center py-8 border-t border-white/10 max-w-3xl mx-auto"
         >
-          <p className="text-lg md:text-xl font-sans mb-4 text-white/80 leading-relaxed">
-            It's okay if your current system is held together by hope and sticky notes. Most businesses start there.
-          </p>
-          <p className="text-sm md:text-base text-white/50 font-sans">
+          <p className="text-sm md:text-base text-white/50 font-sans mt-4">
             We focus on clarity, structure, and incremental improvement. Let's discuss your real operational challenges—no buzzwords, just practical next steps.
           </p>
         </motion.div>

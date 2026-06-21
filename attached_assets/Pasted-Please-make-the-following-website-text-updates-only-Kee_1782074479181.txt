@@ -1,0 +1,62 @@
+Please make the following website text updates only. Keep all existing styling, layout, colours, animations, spacing, routing, contact form functionality, Google Analytics, Meta Pixel, and Formspree integration unchanged.
+
+ABOUT PAGE
+
+1. At the very bottom of the About page, find this text:
+
+"Every business has untapped potential hidden within its processes. Our role is to uncover inefficiencies, simplify complexity, and build systems that create lasting operational clarity."
+
+Make this text slightly smaller than the subtext under "Who's Behind Clearline".
+
+SYSTEMS & TOOLS PAGE
+
+1. Shorten the "AI Integration" description so it is similar in length to the other system descriptions. Use:
+
+"Practical AI solutions are applied where they create genuine business value. From reducing manual tasks to supporting faster decisions, AI becomes part of a smarter operating model."
+
+2. Rewrite all system/tool descriptions so they do not start with "We".
+
+3. Keep each system/tool description roughly similar in length, around two concise sentences.
+
+4. Suggested revised descriptions:
+
+Microsoft 365:
+"The Microsoft 365 suite creates a connected digital workspace for communication, collaboration, and secure document access. Teams gain a reliable foundation for day-to-day operations."
+
+Power BI:
+"Static spreadsheets are transformed into interactive dashboards with clear visibility of key performance indicators. Leaders can track performance and make better decisions with confidence."
+
+Power Automate:
+"Repetitive administrative tasks such as approvals, notifications, and data movement can run automatically in the background. This reduces manual effort and improves consistency."
+
+Power Apps:
+"Custom low-code applications can replace clunky spreadsheets and rigid off-the-shelf tools. Business processes become easier to manage, update, and scale."
+
+Excel:
+"Excel can be strengthened with structured templates, automation, data modelling, and reporting logic. Existing spreadsheets become more reliable, useful, and easier to maintain."
+
+SharePoint:
+"Secure document libraries and team spaces create a single source of truth for business information. Files, processes, and knowledge become easier to organise and access."
+
+Workflow Automation:
+"Multi-step workflows can be mapped, digitised, and automated to reduce delays and manual handovers. Processes become more consistent, visible, and easier to manage."
+
+Process Mapping:
+"End-to-end business processes are visualised to identify bottlenecks, duplication, and unnecessary manual effort. Clear maps create the foundation for practical improvement."
+
+Reporting Dashboards:
+"Performance data is centralised into clear visual dashboards that support faster decision-making. Teams can monitor progress, trends, and operational health at a glance."
+
+5. Add two additional system/tool cards if the current layout allows:
+
+Google Workspace:
+"Google Workspace supports cloud-based collaboration across documents, email, calendars, and shared files. It can be structured to improve visibility, consistency, and team productivity."
+
+Notion:
+"Notion can bring processes, notes, project information, and internal knowledge into one flexible workspace. It is useful for creating lightweight operating systems for growing teams."
+
+6. At the very bottom of the Systems & Tools page, remove this text completely:
+
+"It's okay if your current system is held together by hope and sticky notes. Most businesses start there."
+
+Do not replace it with anything.
