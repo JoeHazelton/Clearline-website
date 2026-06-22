@@ -86,16 +86,27 @@ export default function Home() {
           Identifying operational friction so business owners can focus on the work that matters.
         </motion.p>
 
-        {/* CTA Arrow */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.5, duration: 0.8 }}
-          className="mt-8"
+          className="mt-8 flex gap-12 md:gap-20"
         >
+          {/* Explore Button */}
           <Link href="/about">
             <a className="group flex flex-col items-center gap-2 cursor-pointer transition-all duration-300">
               <span className="text-white/40 text-xs tracking-widest uppercase group-hover:text-primary transition-colors">Explore</span>
+              <div className="p-3 border border-white/10 rounded-full group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all">
+                <ChevronRight className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" strokeWidth={2} />
+              </div>
+            </a>
+          </Link>
+
+          {/* Contact Button */}
+          <Link href="/contact">
+            <a className="group flex flex-col items-center gap-2 cursor-pointer transition-all duration-300">
+              <span className="text-white/40 text-xs tracking-widest uppercase group-hover:text-primary transition-colors">Contact</span>
               <div className="p-3 border border-white/10 rounded-full group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all">
                 <ChevronRight className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" strokeWidth={2} />
               </div>
