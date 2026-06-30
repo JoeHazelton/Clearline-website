@@ -1,0 +1,49 @@
+Please update the About page only. Keep the existing design style, colours, animations, spacing, cards, icons, Google Analytics, Meta Pixel, Formspree contact form, and routing unchanged.
+
+Goal:
+Refine the About page so it better explains why Clearline exists, how Clearline works, and why businesses should trust it.
+
+Changes:
+
+1. Update the opening text under “About Clearline” to:
+
+“Clearline was created to help businesses move beyond inefficient processes, disconnected systems, and time-consuming manual work.
+
+We combine practical operational experience with modern technology, automation, and AI to simplify complexity, improve visibility, and create better ways of working.”
+
+2. Add a new section after the opening text and before the process cards.
+
+Section title:
+“Why Clearline Exists”
+
+Section text:
+“Many businesses lose valuable time to duplicated effort, scattered information, and processes that have grown more complicated than they need to be. Clearline exists to bring structure, clarity, and practical improvement to the way businesses operate — helping teams save time, reduce friction, and focus on higher-value work.”
+
+3. Update the process card titles and descriptions as follows:
+
+Discover:
+“Understand your business, your people, and your current ways of working.”
+
+Design:
+“Create practical solutions tailored to your processes, systems, and goals.”
+
+Implement:
+“Introduce improvements with minimal disruption to day-to-day operations.”
+
+Enable:
+“Train your team and embed the new ways of working with confidence.”
+
+Improve:
+“Continue refining, supporting, and scaling as your business grows.”
+
+4. Replace the current process cards if needed so the flow becomes:
+    Discover → Design → Implement → Enable → Improve
+5. Keep the current visual card style where possible.
+6. Do not add a photo yet.
+7. Do not change the Systems & Tools page yet.
+
+After making the changes, please tell me:
+
+* Which file was modified
+* The exact text sections changed
+* Whether any card titles/icons were changed
