@@ -109,7 +109,7 @@ export default function Contact() {
                 Start Your Review
               </h3>
               <p className="text-sm text-white/60 font-sans leading-relaxed">
-                Briefly tell us what is slowing your business down. This could be admin, spreadsheets, repeated tasks, disconnected systems, unclear reporting or anything else that feels harder than it should.
+                Briefly tell us what is slowing your business down — admin, spreadsheets, repeated tasks, disconnected systems, unclear reporting or anything else that feels harder than it should.
               </p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-5">
@@ -231,7 +231,7 @@ export default function Contact() {
                 className="w-full bg-primary text-black hover:bg-cyan-400 font-bold tracking-wide transition-all shadow-[0_0_15px_rgba(0,243,255,0.2)] hover:shadow-[0_0_25px_rgba(0,243,255,0.4)] disabled:opacity-70 disabled:cursor-not-allowed mt-2"
               >
                 <Send className="w-4 h-4 mr-2" />
-                {isLoading ? "SENDING..." : "REQUEST FREE REVIEW"}
+                {isLoading ? "Sending..." : "Request Free Review"}
               </Button>
             </form>
           </motion.div>
