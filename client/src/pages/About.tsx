@@ -52,7 +52,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-20"
       >
-        <div className="mb-12">
+        <div className="mb-8">
           <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-white border-l-4 border-primary pl-6">
             About <span className="text-primary">Clearline</span>
           </h2>
@@ -67,7 +67,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mb-16">
+        <div className="mb-12">
           <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
             Why Clearline <span className="text-primary">Exists</span>
           </h3>
@@ -78,7 +78,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           {processSteps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -132,7 +132,7 @@ export default function About() {
           </div>
         </motion.div>
 
-        <div className="mt-16 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
+        <div className="mt-8 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
           <p className="text-sm md:text-base text-white/50 font-sans">
             Every business has untapped potential hidden within its processes. Our role is to uncover inefficiencies, simplify complexity, and build systems that create lasting operational clarity.
           </p>
