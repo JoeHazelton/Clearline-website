@@ -78,20 +78,20 @@ export default function Contact() {
       <div className="flex-grow px-6 md:px-20 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-start">
         
         {/* Left Column: Form (Moved to top on mobile) */}
-        <div className="space-y-6 order-1 md:order-1">
+        <div className="space-y-4 md:space-y-6 order-1 md:order-1">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            className="mb-8"
+            className="mb-4 md:mb-8"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-display font-bold mb-3 md:mb-4">
               Business Efficiency <span className="text-primary text-glow">Review</span>
             </h2>
-            <div className="space-y-3 font-sans">
-              <p className="text-base text-white/80 leading-relaxed">
+            <div className="space-y-2 md:space-y-3 font-sans">
+              <p className="text-sm md:text-base text-white/80 leading-relaxed">
                 Tell us what feels manual, messy or time-consuming in your business. Whether it’s spreadsheets, admin, disconnected systems or lack of visibility, we’ll help identify practical ways to improve how things run.
               </p>
-              <p className="text-sm text-primary italic">
+              <p className="text-xs md:text-sm text-primary italic">
                 Free, informal and no obligation. Not sure what to write? A few sentences is enough.
               </p>
             </div>
@@ -102,11 +102,11 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="bg-white/5 border border-white/10 p-8 rounded-lg backdrop-blur-sm"
+            className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-lg backdrop-blur-sm"
           >
-            <div className="mb-8">
+            <div className="mb-6 md:mb-8">
               <h3 className="text-xl font-display font-semibold text-white/90 mb-2">
-                Start Your Review Request
+                Start Your Review
               </h3>
               <p className="text-sm text-white/60 font-sans leading-relaxed">
                 Briefly tell us what is slowing your business down. This could be admin, spreadsheets, repeated tasks, disconnected systems, unclear reporting or anything else that feels harder than it should.
