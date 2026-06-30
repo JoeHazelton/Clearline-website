@@ -78,7 +78,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {processSteps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -100,17 +100,17 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-20 grid md:grid-cols-2 gap-12 items-start"
+          className="mb-16 grid md:grid-cols-2 gap-12 items-start"
         >
           <div>
             <h3 className="text-2xl font-display font-bold mb-6 text-white border-l-4 border-secondary pl-6">
               Values & <span className="text-primary">Philosophy</span>
             </h3>
             <div className="space-y-4 ml-7 text-white/70 font-sans">
-              <p>We believe systems should reduce cognitive load, not add to it. Technology must serve the people using it, never the other way around.</p>
-              <p>We prioritize practical, outcome-driven solutions over theoretical complexity. If it doesn't solve a real problem, we don't build it.</p>
-              <p>Automation and structure are designed to support your team, not replace them—allowing people to do what they do best, while machines handle the rest.</p>
-              <p>We build for long-term scalability, ensuring the foundations we lay today continue to support your growth for years to come.</p>
+              <p>We believe systems should reduce cognitive load, not add to it. Technology should serve the people using it, never the other way around.</p>
+              <p>We prioritise practical, outcome-driven solutions over theoretical complexity. If it doesn't solve a real problem, we don't build it.</p>
+              <p>Automation and structure are designed to support your team, not replace them — allowing people to focus on the work they do best.</p>
+              <p>We build for long-term scalability, ensuring the foundations we create today continue to support your growth for years to come.</p>
             </div>
           </div>
 
@@ -120,16 +120,19 @@ export default function About() {
             </h3>
             <div className="space-y-4 ml-7 text-white/70 font-sans">
               <p>
-                Clearline is run by industry-leading practitioners with years of hands-on experience across multiple sectors. We have first-hand exposure to the operational pain points that SMEs face every day.
+                Clearline is built on hands-on experience across operations, project delivery, process improvement, reporting, and business systems.
               </p>
               <p>
-                We aren't just consultants; we are builders who have worked inside complex, real-world environments. Our solutions are born from solving the very problems we've personally encountered, ensuring they are grounded in reality, not theory.
+                We understand the real-world challenges that SMEs face: manual admin, disconnected information, unclear reporting, and processes that rely too heavily on individual effort.
+              </p>
+              <p>
+                Our approach is practical and grounded in reality. We focus on solutions that are useful, manageable, and built around the way your business actually works.
               </p>
             </div>
           </div>
         </motion.div>
 
-        <div className="mt-20 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
+        <div className="mt-16 border-t border-white/10 pt-12 text-center max-w-3xl mx-auto">
           <p className="text-sm md:text-base text-white/50 font-sans">
             Every business has untapped potential hidden within its processes. Our role is to uncover inefficiencies, simplify complexity, and build systems that create lasting operational clarity.
           </p>

@@ -1,0 +1,44 @@
+Please make the following About page refinements only.
+
+Keep the existing design style, colours, fonts, animations, routing, Google Analytics, Meta Pixel, Formspree contact form, and all other pages unchanged.
+
+1. Spacing refinements
+
+* Reduce the large vertical gap between the final process card, “Improve”, and the “Values & Philosophy” section.
+* Review the About page spacing overall and reduce any excessive gaps where sections feel too far apart.
+* Keep the page breathable and premium, but make the sections feel more connected.
+* Do not make the page cramped.
+
+2. Values & Philosophy wording
+    Please update the “Values & Philosophy” text to use UK spelling and slightly cleaner wording.
+
+Replace the current text with:
+
+“We believe systems should reduce cognitive load, not add to it. Technology should serve the people using it, never the other way around.
+
+We prioritise practical, outcome-driven solutions over theoretical complexity. If it doesn’t solve a real problem, we don’t build it.
+
+Automation and structure are designed to support your team, not replace them — allowing people to focus on the work they do best.
+
+We build for long-term scalability, ensuring the foundations we create today continue to support your growth for years to come.”
+
+3. Who’s Behind Clearline wording
+    Please update this section to sound credible but not overstated.
+
+Replace the current text with:
+
+“Clearline is built on hands-on experience across operations, project delivery, process improvement, reporting, and business systems.
+
+We understand the real-world challenges that SMEs face: manual admin, disconnected information, unclear reporting, and processes that rely too heavily on individual effort.
+
+Our approach is practical and grounded in reality. We focus on solutions that are useful, manageable, and built around the way your business actually works.”
+
+4. Do not add any photos yet.
+5. Do not change the process card titles.
+6. Do not change the Systems & Tools page yet.
+
+After making the changes, please tell me:
+
+* Which file was modified
+* Which spacing classes or values were changed
+* The final updated wording for Values & Philosophy and Who’s Behind Clearline
