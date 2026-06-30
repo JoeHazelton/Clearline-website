@@ -1,0 +1,105 @@
+Please redesign the current Systems & Tools page into a clearer service-focused page called “How We Help”.
+
+Keep the existing Clearline visual style, dark background, cards, icons, colours, animations, spacing style, Google Analytics, Meta Pixel, Formspree contact form, routing and other pages unchanged.
+
+Goal:
+Change the page from a tool/software list into a clearer explanation of what Clearline helps businesses with.
+
+1. Rename the page title from:
+    “Systems & Tools”
+
+to:
+“How We Help”
+
+2. Update the introduction text to:
+
+“Clearline helps businesses simplify operations, reduce manual work, improve visibility, and introduce practical technology that supports better ways of working.
+
+Rather than starting with software, we start with your business challenges — then identify the right processes, systems, automation, reporting, AI, or training to create practical improvement.”
+
+3. Replace the current long list of tool cards with four main service cards:
+
+Business Process Improvement
+“Identify bottlenecks, reduce duplicated effort, and redesign workflows so your business can operate with greater clarity and efficiency.”
+
+Automation & AI
+“Automate repetitive tasks, connect fragmented systems, and introduce practical AI where it creates genuine value for your team and your customers.”
+
+Business Systems & Reporting
+“Create clearer information flows, connected systems, and useful dashboards that help you understand performance and make better decisions.”
+
+Training & Adoption
+“Support your team with practical training, demonstrations, workshops, and guidance so new systems and ways of working are understood and adopted with confidence.”
+
+4. Add a second section below the four main service cards titled:
+
+“Platforms We Work With”
+
+5. Under that section, create smaller supporting cards for:
+
+Microsoft 365
+“Outlook, Word, Excel, PowerPoint, Teams, OneDrive, SharePoint, Planner, and Visio — structured to improve collaboration, document control, communication, and day-to-day productivity.”
+
+Microsoft Power Platform
+“Power BI, Power Apps, and Power Automate can help businesses build dashboards, automate workflows, and create practical low-code tools that support operational improvement.”
+
+Google Workspace
+“Gmail, Docs, Sheets, Slides, Drive, Forms, Calendar, and Meet can be organised and improved to support better collaboration, consistency, and visibility.”
+
+AI Tools
+“AI tools such as ChatGPT, Microsoft Copilot, Gemini, and similar platforms can support faster drafting, analysis, planning, training, and decision-making when introduced properly.”
+
+Notion & Lightweight Systems
+“Flexible tools like Notion can bring processes, notes, project information, and internal knowledge into one organised workspace for growing teams.”
+
+6. Remove the existing individual cards for:
+
+* Excel
+* SharePoint
+* Power BI
+* Power Automate
+* Power Apps
+* Reporting Dashboards
+* Google Workspace as a main service card
+* Notion as a main service card
+
+These should now be grouped under the platform section where appropriate.
+
+7. Add a closing call-to-action section at the bottom:
+
+“Not sure where to start?
+
+A Business Review helps identify where time is being lost, where processes are creating friction, and which practical improvements could make the biggest difference.”
+
+Add a button labelled:
+
+“Request a Business Review”
+
+The button should link to the Business Review/contact page.
+
+8. Keep the current visual style as much as possible:
+
+* Same card styling
+* Same icon style
+* Same dark theme
+* Same cyan accent colour
+* Same animations where appropriate
+
+9. Do not change:
+
+* Homepage
+* About page
+* Business Review/contact page
+* Navigation functionality unless needed to rename the menu item
+* Google Analytics
+* Meta Pixel
+* Formspree form functionality
+
+10. If there is a navigation menu item currently called “Systems & Tools”, rename it to “How We Help”.
+
+After making the changes, please tell me:
+
+* Which files were modified
+* Whether the route/path stayed the same or changed
+* The new page structure
+* The exact text added

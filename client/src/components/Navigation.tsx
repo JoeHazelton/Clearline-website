@@ -12,7 +12,7 @@ export default function Navigation() {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Systems", path: "/systems" },
+    { name: "How We Help", path: "/systems" },
     { name: "Business Review", path: "/contact" },
   ];
 

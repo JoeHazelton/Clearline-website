@@ -1,80 +1,67 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { 
-  FileSpreadsheet, 
   BarChart3, 
   Workflow, 
-  AppWindow, 
-  Grid, 
-  Share2, 
   Bot, 
   GitMerge, 
   LayoutDashboard,
   Brain,
   Cloud,
-  FileText
+  FileText,
+  Users,
+  Grid
 } from "lucide-react";
 
 export default function Systems() {
-  const tools = [
-    {
-      name: "AI Integration",
-      icon: Brain,
-      desc: "Practical AI solutions are applied where they create genuine business value. From reducing manual tasks to supporting faster decisions, AI becomes part of a smarter operating model."
-    },
+  const services = [
     { 
-      name: "Process Mapping", 
+      name: "Business Process Improvement", 
       icon: GitMerge, 
-      desc: "End-to-end business processes are visualised to identify bottlenecks, duplication, and unnecessary manual effort. Clear maps create the foundation for practical improvement." 
+      desc: "Identify bottlenecks, reduce duplicated effort, and redesign workflows so your business can operate with greater clarity and efficiency." 
+    },
+    {
+      name: "Automation & AI",
+      icon: Brain,
+      desc: "Automate repetitive tasks, connect fragmented systems, and introduce practical AI where it creates genuine value for your team and your customers."
     },
     { 
-      name: "Workflow Automation", 
-      icon: Workflow, 
-      desc: "Multi-step workflows can be mapped, digitised, and automated to reduce delays and manual handovers. Processes become more consistent, visible, and easier to manage." 
+      name: "Business Systems & Reporting", 
+      icon: LayoutDashboard, 
+      desc: "Create clearer information flows, connected systems, and useful dashboards that help you understand performance and make better decisions." 
     },
+    { 
+      name: "Training & Adoption", 
+      icon: Users, 
+      desc: "Support your team with practical training, demonstrations, workshops, and guidance so new systems and ways of working are understood and adopted with confidence." 
+    }
+  ];
+
+  const platforms = [
     { 
       name: "Microsoft 365", 
       icon: Grid, 
-      desc: "The Microsoft 365 suite creates a connected digital workspace for communication, collaboration, and secure document access. Teams gain a reliable foundation for day-to-day operations." 
+      desc: "Outlook, Word, Excel, PowerPoint, Teams, OneDrive, SharePoint, Planner, and Visio — structured to improve collaboration, document control, communication, and day-to-day productivity." 
+    },
+    { 
+      name: "Microsoft Power Platform", 
+      icon: Workflow, 
+      desc: "Power BI, Power Apps, and Power Automate can help businesses build dashboards, automate workflows, and create practical low-code tools that support operational improvement." 
     },
     { 
       name: "Google Workspace", 
       icon: Cloud, 
-      desc: "Google Workspace supports cloud-based collaboration across documents, email, calendars, and shared files. It can be structured to improve visibility, consistency, and team productivity." 
+      desc: "Gmail, Docs, Sheets, Slides, Drive, Forms, Calendar, and Meet can be organised and improved to support better collaboration, consistency, and visibility." 
     },
     { 
-      name: "Power BI", 
-      icon: BarChart3, 
-      desc: "Static spreadsheets are transformed into interactive dashboards with clear visibility of key performance indicators. Leaders can track performance and make better decisions with confidence." 
-    },
-    { 
-      name: "Power Automate", 
+      name: "AI Tools", 
       icon: Bot, 
-      desc: "Repetitive administrative tasks such as approvals, notifications, and data movement can run automatically in the background. This reduces manual effort and improves consistency." 
-    }, 
-    { 
-      name: "Power Apps", 
-      icon: AppWindow, 
-      desc: "Custom low-code applications can replace clunky spreadsheets and rigid off-the-shelf tools. Business processes become easier to manage, update, and scale." 
+      desc: "AI tools such as ChatGPT, Microsoft Copilot, Gemini, and similar platforms can support faster drafting, analysis, planning, training, and decision-making when introduced properly." 
     },
     { 
-      name: "Notion", 
+      name: "Notion & Lightweight Systems", 
       icon: FileText, 
-      desc: "Notion can bring processes, notes, project information, and internal knowledge into one flexible workspace. It is useful for creating lightweight operating systems for growing teams." 
-    },
-    { 
-      name: "Excel", 
-      icon: FileSpreadsheet, 
-      desc: "Excel can be strengthened with structured templates, automation, data modelling, and reporting logic. Existing spreadsheets become more reliable, useful, and easier to maintain." 
-    },
-    { 
-      name: "SharePoint", 
-      icon: Share2, 
-      desc: "Secure document libraries and team spaces create a single source of truth for business information. Files, processes, and knowledge become easier to organise and access." 
-    }, 
-    { 
-      name: "Reporting Dashboards", 
-      icon: LayoutDashboard, 
-      desc: "Performance data is centralised into clear visual dashboards that support faster decision-making. Teams can monitor progress, trends, and operational health at a glance." 
+      desc: "Flexible tools like Notion can bring processes, notes, project information, and internal knowledge into one organised workspace for growing teams." 
     }
   ];
 
@@ -86,51 +73,98 @@ export default function Systems() {
         className="w-full"
       >
         <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-right border-r-4 border-primary pr-6">
-          Systems <span className="text-primary">&</span> Tools
+          How We <span className="text-primary">Help</span>
         </h2>
         
-        <motion.p 
+        <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="text-right text-sm md:text-base text-white/60 font-sans mb-12 max-w-2xl ml-auto pr-6"
+          className="text-right text-base text-white/70 font-sans mb-12 max-w-2xl ml-auto pr-6 space-y-4"
         >
-          We work across a carefully selected ecosystem of platforms, automation tools, and business systems designed to improve efficiency, visibility, and scalability. By combining modern technologies with practical operational expertise, we help businesses eliminate manual processes, connect fragmented data, automate repetitive tasks, and create reliable workflows that support long-term growth. Every tool we implement is selected for a specific purpose: delivering measurable improvements to the way your business operates.
-        </motion.p>
+          <p>
+            Clearline helps businesses simplify operations, reduce manual work, improve visibility, and introduce practical technology that supports better ways of working.
+          </p>
+          <p>
+            Rather than starting with software, we start with your business challenges — then identify the right processes, systems, automation, reporting, AI, or training to create practical improvement.
+          </p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
-          {tools.map((tool, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+          {services.map((service, index) => (
             <motion.div
-              key={tool.name}
+              key={service.name}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
               whileHover={{ y: -5, borderColor: "hsl(var(--primary))" }}
-              className="bg-white/5 border border-white/10 p-5 rounded-lg relative overflow-hidden group cursor-default transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(0,243,255,0.1)]"
-              data-testid={`card-tool-${tool.name.replace(/\s+/g, '-').toLowerCase()}`}
+              className="bg-white/5 border border-white/10 p-6 rounded-lg relative overflow-hidden group cursor-default transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(0,243,255,0.1)] h-full"
+              data-testid={`card-service-${service.name.replace(/\s+/g, '-').toLowerCase()}`}
             >
-              <div className="flex flex-col items-start gap-3">
-                <div className="p-2.5 rounded-md bg-white/5 text-primary group-hover:bg-primary/20 transition-colors">
-                  <tool.icon size={20} />
+              <div className="flex flex-col items-start gap-4">
+                <div className="p-3 rounded-md bg-white/5 text-primary group-hover:bg-primary/20 transition-colors">
+                  <service.icon size={24} />
                 </div>
                 <div>
-                  <h3 className="text-base font-display font-semibold mb-2 group-hover:text-primary transition-colors">{tool.name}</h3>
-                  <p className="text-xs text-white/60 font-sans leading-relaxed">{tool.desc}</p>
+                  <h3 className="text-lg font-display font-semibold mb-3 group-hover:text-primary transition-colors">{service.name}</h3>
+                  <p className="text-sm text-white/60 font-sans leading-relaxed">{service.desc}</p>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-12"
+        >
+          <h3 className="text-2xl font-display font-bold mb-8 text-white border-l-4 border-secondary pl-6">
+            Platforms We <span className="text-primary">Work With</span>
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {platforms.map((platform, index) => (
+              <motion.div
+                key={platform.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                whileHover={{ y: -5, borderColor: "hsl(var(--primary))" }}
+                className="bg-white/5 border border-white/10 p-5 rounded-lg relative overflow-hidden group cursor-default transition-all duration-300 hover:bg-white/10 hover:shadow-[0_0_15px_rgba(0,243,255,0.1)]"
+                data-testid={`card-platform-${platform.name.replace(/\s+/g, '-').toLowerCase()}`}
+              >
+                <div className="flex flex-col items-start gap-3">
+                  <div className="p-2.5 rounded-md bg-white/5 text-primary group-hover:bg-primary/20 transition-colors">
+                    <platform.icon size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-display font-semibold mb-2 group-hover:text-primary transition-colors">{platform.name}</h3>
+                    <p className="text-xs text-white/60 font-sans leading-relaxed">{platform.desc}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="text-center py-8 border-t border-white/10 max-w-3xl mx-auto"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center py-12 border-t border-white/10 max-w-3xl mx-auto mb-16"
         >
-          <p className="text-sm md:text-base text-white/50 font-sans mt-4">
-            We focus on clarity, structure, and incremental improvement. Let's discuss your real operational challenges—no buzzwords, just practical next steps.
+          <h3 className="text-2xl font-display font-bold mb-4 text-white">Not sure where to start?</h3>
+          <p className="text-base text-white/70 font-sans mb-8">
+            A Business Review helps identify where time is being lost, where processes are creating friction, and which practical improvements could make the biggest difference.
           </p>
+          <Link href="/contact">
+            <a className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium tracking-widest text-black uppercase transition-all duration-300 bg-primary hover:bg-white hover:text-black hover:shadow-[0_0_20px_rgba(0,243,255,0.4)]">
+              Request a Business Review
+            </a>
+          </Link>
         </motion.div>
       </motion.div>
     </div>
