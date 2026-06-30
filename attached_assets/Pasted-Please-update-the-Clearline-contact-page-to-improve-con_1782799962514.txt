@@ -1,0 +1,117 @@
+Please update the Clearline contact page to improve conversion from website visitors into Free Business Efficiency Review enquiries.
+
+Main objective:
+Change the page from a generic “Get in Touch” contact page into a clearer, softer “Free Business Efficiency Review” request page.
+
+Required changes:
+
+1. Reorder the contact page layout on mobile and desktop:
+
+* Move the enquiry form higher up the page.
+* The form should appear before the map.
+* Suggested order:
+    1. Main heading / intro section
+    2. Business Efficiency Review request form
+    3. “What happens next?” section
+    4. Contact details, social icons and map
+
+2. Update the main heading:
+    Change the current “Get in Touch” heading to:
+
+Request a Free Business Efficiency Review
+
+Keep the Clearline styling and turquoise highlight effect if appropriate.
+
+3. Add/replace the intro copy near the top of the page with:
+
+Tell us what feels manual, messy or time-consuming in your business. Whether it’s spreadsheets, admin, disconnected systems or lack of visibility, we’ll help identify practical ways to improve how things run.
+
+Add a smaller reassurance line underneath:
+
+Not sure what to write? A few sentences is enough.
+
+4. Update the form section title:
+    Change:
+
+Contact / Business Review Request
+
+to:
+
+Start Your Review Request
+
+5. Update the form helper text:
+    Replace the current helper text with:
+
+Briefly tell us what is slowing your business down. This could be admin, spreadsheets, repeated tasks, disconnected systems, unclear reporting or anything else that feels harder than it should.
+
+6. Keep the form fields:
+
+* Name
+* Email
+* Company Name (Optional)
+* Area of Interest (Optional)
+* Message
+
+7. Update the “Area of Interest” dropdown options to be simpler and more user-friendly:
+
+* Too much manual admin
+* Spreadsheet/process issues
+* Better reporting/visibility
+* Automation/AI support
+* Not sure yet
+* Other
+
+8. Update the message placeholder:
+    Change the message placeholder to:
+
+Tell us what feels manual, messy or time-consuming…
+
+9. Update the submit button:
+    Change the button text from:
+
+Send Message
+
+to:
+
+Request Free Review
+
+Keep the icon if already used.
+
+10. Rewrite the “What Happens Next?” section to sound softer and less formal:
+
+Once you submit the form, we’ll review what you’ve shared and arrange a short, informal conversation if Clearline looks like a good fit. The aim is to understand where time, admin or process issues may be holding the business back and suggest practical next steps.
+
+11. Add a small trust/reassurance line near the form or beneath the intro:
+    Free, informal and no obligation.
+12. Keep the existing contact details:
+
+* Maldon, Essex, United Kingdom
+* info@clear-line.io
+* 07710 840036
+* Social icons
+* Map
+
+But move these lower down the page so they support credibility rather than appearing before the main form.
+
+13. Improve readability:
+
+* Keep the stylised Clearline heading font for major headings.
+* Use a cleaner/easier-to-read font for longer body text, form helper text, labels and placeholders if this can be done without disrupting the wider site design.
+* Make sure the page reads well on mobile first.
+
+14. Ensure the existing Formspree/contact form functionality continues to work exactly as before.
+    Do not break the form submission endpoint, validation, success message or error handling.
+15. Keep the overall visual style consistent with the current Clearline site:
+
+* Dark background
+* Turquoise accent colour
+* Card-based sections
+* Existing spacing and responsive design style
+
+After making the changes, check:
+
+* The form appears higher on mobile.
+* The page still looks good on desktop.
+* The dropdown includes “Not sure yet”.
+* The button says “Request Free Review”.
+* The form still submits correctly.
