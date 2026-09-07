@@ -1,119 +1,240 @@
-import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { motion, useReducedMotion } from "framer-motion";
+import {
+  ArrowRight,
+  Clock3,
+  Eye,
+  TrendingUp,
+  Workflow,
+} from "lucide-react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 
+const outcomes = [
+  {
+    title: "More time back",
+    description:
+      "Reduce repetitive admin so your team can spend more time on higher-value work.",
+    icon: Clock3,
+  },
+  {
+    title: "Clearer visibility",
+    description:
+      "Bring key information together so you can see what is happening and make better-informed decisions.",
+    icon: Eye,
+  },
+  {
+    title: "Consistent processes",
+    description:
+      "Create clear, reliable ways of working that reduce errors and reliance on individual knowledge.",
+    icon: Workflow,
+  },
+  {
+    title: "Ready for growth",
+    description:
+      "Put scalable processes and systems in place to support the next stage of your business.",
+    icon: TrendingUp,
+  },
+];
+
 export default function Home() {
+  const prefersReducedMotion = useReducedMotion();
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const [titleWidth, setTitleWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    const title = titleRef.current;
+    if (!title) return;
+
+    const measure = () => setTitleWidth(title.getBoundingClientRect().width);
+    measure();
+
+    const observer = new ResizeObserver(measure);
+    observer.observe(title);
+    return () => observer.disconnect();
+  }, []);
+
+  const introMotion = prefersReducedMotion
+    ? { initial: false, animate: { opacity: 1, y: 0 } }
+    : {
+        initial: { opacity: 0, y: 12 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: 0.25, duration: 0.7, ease: "easeOut" as const },
+      };
+
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Background ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="relative z-10 text-center px-4 flex flex-col items-center pt-8 -mt-16 md:-mt-24">
-        {/* Logo Image Wrapper (Cropped to remove transparent padding) */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3, duration: 0.8 }}
-          className="w-[200px] md:w-[230px] h-[120px] md:h-[140px] overflow-hidden flex items-center justify-center mb-1 md:mb-2 mt-8"
-        >
-          <img
-            src="/Clear-line Logo Transparent.png"
-            alt="Clearline Logo"
-            className="w-full h-auto object-center scale-[1.4] md:scale-[1.5] translate-y-2"
-          />
-        </motion.div>
-
-        {/* Logo Text */}
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          className="text-4xl md:text-7xl font-display font-black tracking-wider text-white relative inline-block"
-        >
-          CLEARLINE
-          
-          {/* Fuse Dot Animation */}
-          <motion.div 
-            initial={{ left: "2%", opacity: 0 }}
-            animate={{ left: "94%", opacity: [0, 1, 1, 0] }}
-            transition={{ 
-              delay: 2.5,
-              duration: 2, 
-              times: [0, 0.1, 0.9, 1],
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatDelay: 5
-            }}
-            className="absolute top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_15px_#0ff]"
-          />
-
-          {/* Arrow */}
+    <main className="home-page">
+      <section className="home-hero" aria-labelledby="home-title">
+        <div className="home-hero-content">
           <motion.div
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 4.5, duration: 0.5 }}
-            className="absolute -right-8 top-1/2 -translate-y-1/2 text-primary"
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={
+              prefersReducedMotion
+                ? { duration: 0 }
+                : { delay: 3, duration: 0.8 }
+            }
+            className="home-logo-frame"
           >
-            <ChevronRight size={32} strokeWidth={3} />
+            <img
+              src="/images/clearline/clearline-logo.png"
+              alt="Clearline logo"
+              width="1254"
+              height="1254"
+            />
           </motion.div>
-        </motion.h1>
 
-        {/* Animated Underline */}
-        <motion.div
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ delay: 2, duration: 1, ease: "easeInOut" }}
-          className="h-[2px] w-3/4 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent mt-3 mb-4 origin-center"
-        />
+          <div className="home-wordmark-wrap">
+            <motion.h1
+              ref={titleRef}
+              id="home-title"
+              initial={prefersReducedMotion ? false : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={
+                prefersReducedMotion
+                  ? { duration: 0 }
+                  : { duration: 2, ease: "easeOut" }
+              }
+              className="home-wordmark"
+            >
+              CLEARLINE
+              <motion.span
+                aria-hidden="true"
+                initial={
+                  prefersReducedMotion
+                    ? { left: Math.max(titleWidth - 7, 0), opacity: 0 }
+                    : { left: 0, opacity: 0 }
+                }
+                animate={
+                  prefersReducedMotion
+                    ? { left: Math.max(titleWidth - 7, 0), opacity: 0 }
+                    : {
+                        left: Math.max(titleWidth - 7, 0),
+                        opacity: [0, 1, 1, 0],
+                      }
+                }
+                transition={
+                  prefersReducedMotion
+                    ? { duration: 0 }
+                    : {
+                        delay: 2.5,
+                        duration: 2,
+                        times: [0, 0.1, 0.9, 1],
+                        ease: "easeInOut",
+                      }
+                }
+                className="home-fuse-dot"
+              />
+            </motion.h1>
 
-        {/* Tagline */}
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3, duration: 0.8 }}
-          className="text-base md:text-lg font-sans font-light tracking-[0.2em] text-white/70 uppercase mb-4"
-        >
-          Future Systems Architect
-        </motion.p>
+            <motion.span
+              aria-hidden="true"
+              initial={prefersReducedMotion ? false : { opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={
+                prefersReducedMotion
+                  ? { duration: 0 }
+                  : { delay: 4.5, duration: 0.5 }
+              }
+              className="home-wordmark-arrow"
+            >
+              <ArrowRight size={30} strokeWidth={2.4} />
+            </motion.span>
+          </div>
 
-        {/* Subtext */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 4.2, duration: 1.5, ease: "easeOut" }}
-          className="text-sm md:text-base font-sans text-white/50 max-w-lg mx-auto leading-relaxed mb-6"
-        >
-          Identifying operational friction so business owners can focus on the work that matters.
-        </motion.p>
+          <motion.div
+            initial={prefersReducedMotion ? false : { scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={
+              prefersReducedMotion
+                ? { duration: 0 }
+                : { delay: 2, duration: 1, ease: "easeInOut" }
+            }
+            className="home-underline"
+          />
 
-        {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 3.5, duration: 0.8 }}
-          className="mt-8 flex gap-12 md:gap-20"
-        >
-          {/* Explore Button */}
-          <Link href="/about">
-            <a className="group flex flex-col items-center gap-2 cursor-pointer transition-all duration-300">
-              <span className="text-white/40 text-xs tracking-widest uppercase group-hover:text-primary transition-colors">Explore</span>
-              <div className="p-3 border border-white/10 rounded-full group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all">
-                <ChevronRight className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" strokeWidth={2} />
-              </div>
-            </a>
-          </Link>
+          <motion.div {...introMotion} className="home-copy">
+            <p className="home-tagline">Connect. Automate. Advance.</p>
+            <p className="home-supporting">
+              Business should flow. We help clear the way.
+            </p>
+            <p className="home-description">
+              Clearline improves processes, connects systems and automates
+              repetitive work — giving your team better visibility, more time
+              and a simpler way to get things done.
+            </p>
+          </motion.div>
 
-          {/* Contact Button */}
-          <Link href="/contact">
-            <a className="group flex flex-col items-center gap-2 cursor-pointer transition-all duration-300">
-              <span className="text-white/40 text-xs tracking-widest uppercase group-hover:text-primary transition-colors">Contact</span>
-              <div className="p-3 border border-white/10 rounded-full group-hover:border-primary/50 group-hover:shadow-[0_0_15px_rgba(0,243,255,0.3)] transition-all">
-                <ChevronRight className="w-6 h-6 text-white/60 group-hover:text-primary transition-colors" strokeWidth={2} />
-              </div>
-            </a>
-          </Link>
-        </motion.div>
-      </div>
-    </div>
+          <motion.div
+            {...introMotion}
+            transition={
+              prefersReducedMotion
+                ? { duration: 0 }
+                : { delay: 0.4, duration: 0.7, ease: "easeOut" }
+            }
+            className="home-actions"
+          >
+            <Link href="/contact" className="home-button home-button-primary">
+              Request a Free Business Review
+              <ArrowRight size={16} strokeWidth={2.2} />
+            </Link>
+            <Link href="/systems" className="home-button home-button-secondary">
+              See How We Help
+              <ArrowRight size={16} strokeWidth={2.2} />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="home-outcomes" aria-labelledby="outcomes-title">
+        <div className="home-outcomes-inner">
+          <div className="home-artwork">
+            <div className="home-artwork-soft-edge" aria-hidden="true" />
+            <img
+              src="/images/clearline/clearline-journey-1600.webp"
+              srcSet="/images/clearline/clearline-journey-640.webp 640w, /images/clearline/clearline-journey-960.webp 960w, /images/clearline/clearline-journey-1280.webp 1280w, /images/clearline/clearline-journey-1600.webp 1600w, /images/clearline/clearline-journey.webp 2560w"
+              sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1100px) 48vw, 560px"
+              alt="A glowing road through a mountain landscape with five stages from discovery to improvement"
+              width="2560"
+              height="3200"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="home-outcome-list">
+            <motion.div
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.7 }}
+            >
+              <p className="home-eyebrow">The Clearline difference</p>
+              <h2 id="outcomes-title">What better looks like</h2>
+            </motion.div>
+
+            <div className="home-outcomes-stack">
+              {outcomes.map((outcome, index) => (
+                <motion.article
+                  key={outcome.title}
+                  initial={prefersReducedMotion ? false : { opacity: 0, x: 18 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{
+                    delay: prefersReducedMotion ? 0 : index * 0.08,
+                    duration: 0.55,
+                  }}
+                  className="home-outcome"
+                >
+                  <outcome.icon aria-hidden="true" size={24} strokeWidth={1.8} />
+                  <div>
+                    <h3>{outcome.title}</h3>
+                    <p>{outcome.description}</p>
+                  </div>
+                </motion.article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

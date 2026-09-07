@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -6,8 +6,22 @@ import { Menu, X } from "lucide-react";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const isHome = location === "/";
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    closeButtonRef.current?.focus();
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -20,11 +34,13 @@ export default function Navigation() {
     <>
       <button
         onClick={toggleMenu}
-        className="fixed top-6 right-6 z-50 p-2 text-primary hover:text-white transition-colors mix-blend-difference cursor-pointer"
-        aria-label="Toggle Menu"
+        ref={closeButtonRef}
+        className={`site-menu-toggle ${isHome ? "site-menu-toggle-home" : ""}`}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen}
         data-testid="button-menu-toggle"
       >
-        {isOpen ? <X size={32} /> : <Menu size={32} />}
+        {isOpen ? <X size={29} /> : <Menu size={29} />}
       </button>
 
       <AnimatePresence>
@@ -34,20 +50,20 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 20, stiffness: 100 }}
-            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-md flex flex-col justify-center items-center"
+            className={`site-menu-panel ${isHome ? "site-menu-panel-home" : ""}`}
           >
             <nav className="flex flex-col gap-6 text-center">
               {menuItems.map((item) => (
-                <Link key={item.path} href={item.path}>
-                  <a
-                    onClick={() => setIsOpen(false)}
-                    className={`text-lg md:text-xl font-display uppercase tracking-widest hover:text-primary transition-colors cursor-pointer font-light ${
-                      location === item.path ? "text-primary text-glow font-medium" : "text-white/60"
-                    }`}
-                    data-testid={`link-nav-${item.name.toLowerCase()}`}
-                  >
-                    {item.name}
-                  </a>
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`site-menu-link ${
+                    location === item.path ? "site-menu-link-active" : ""
+                  }`}
+                  data-testid={`link-nav-${item.name.toLowerCase()}`}
+                >
+                  {item.name}
                 </Link>
               ))}
             </nav>
