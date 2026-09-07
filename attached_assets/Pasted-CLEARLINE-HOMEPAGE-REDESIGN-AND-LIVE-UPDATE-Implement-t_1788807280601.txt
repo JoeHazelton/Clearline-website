@@ -1,0 +1,146 @@
+CLEARLINE — HOMEPAGE REDESIGN AND LIVE UPDATE
+
+Implement this agreed design in my EXISTING Clearline Replit project. This is a Vite React website connected to GitHub and deployed through Vercel at clear-line.io. Keep that architecture and deployment pipeline.
+
+Update HOME ONLY and publish the completed change to the existing live website at clear-line.io after the normal build and functional checks. I am happy for Home to look different from the other pages temporarily. We will update About, How We Help and Business Review individually afterwards.
+
+This instruction replaces the earlier request for a separate redesign branch, preview-only delivery and one coordinated release. I authorise this homepage update to go live; do not wait for another publishing confirmation from me.
+
+1. UPDATE THE EXISTING PROJECT AND PUBLISH THROUGH ITS CURRENT PIPELINE
+
+- Read the project's instructions and inspect its Git status, current branch, routes, Vite configuration, homepage, shared navigation, styles and existing animation code before editing.
+- Record the starting commit and preserve a recoverable checkpoint, including existing uncommitted work. Do not discard or overwrite unrelated changes.
+- Use the established workflow for updating the existing production branch. Verify the connected GitHub repository, production branch and Vercel project from available configuration; do not assume the branch is named main. Do not create a separate staging site, test area or replacement project.
+- If earlier work is already on clearline-redesign, safely incorporate the relevant changes into the normal production workflow without discarding unrelated work or overwriting remote changes. Respect existing branch protections.
+- Implement the homepage, check the build and interactions, then commit and publish the intended changes through the existing Replit → GitHub → Vercel pipeline. Publishing this homepage is authorised as part of this task.
+- Keep the existing domain, hosting configuration and integrations. Do not migrate the site to Replit hosting, change DNS, pause the site or add a maintenance page.
+- Continue directly with implementation, verification and deployment. Routine layout choices and the temporary difference in appearance between pages do not need further approval. If account access or a required manual action genuinely blocks deployment, finish the work you can and state the exact remaining action.
+
+2. USE THESE SUPPLIED ASSETS
+
+The attached handover contains:
+
+- assets/clearline-logo.png: my new transparent PNG logo, 1254 x 1254 pixels. Use this above the large CLEARLINE title. Its visible coloured mark occupies the middle of a padded square canvas; account for that transparent space in the layout so the mark has a compact visual height. Preserve its coloured strands and white section. Do not redraw, recolour, vectorise or regenerate it.
+- assets/clearline-journey.webp: my completed portrait Canva artwork, 2560 x 3200 pixels, with five correct icons already included. This is a lossless conversion of the Canva PNG. Use this actual image.
+- reference/clearline-journey-canva-master.png: the unchanged full-resolution Canva original for reference or PNG fallback.
+- reference/clearline-animation-reference.mp4: a recording of the current homepage. This is an animation reference, not a website background or video to embed.
+
+If files have arrived as individual attachments instead of the folder, locate them by filename. If an asset cannot be found, report the missing filename instead of substituting a placeholder or generated image.
+
+Inspect the Vite root/publicDir before choosing paths. If the app uses client/public, place runtime assets under client/public/images/clearline/ and reference them as /images/clearline/clearline-logo.png and /images/clearline/clearline-journey.webp. If it uses another asset convention, follow the working convention. Keep the prompt, source master and recording outside the public build.
+
+The 2560-pixel-wide WebP is a source asset, not a file to force every phone to download. Produce smaller responsive exports from it using ordinary deterministic image processing, for example 640, 960, 1280 and 1600 pixels wide. Preserve the 4:5 aspect ratio, all icons and the composition. Use srcset and sizes appropriate to the actual rendered width, explicit intrinsic dimensions and sufficient quality for the fine icon lines. Compare the exports visually, and retain a high-resolution option. Do not enlarge a thumbnail, regenerate the artwork or apply a blur filter to it.
+
+3. RETAIN THE EXISTING ANIMATION
+
+The current animation is a key part of Clearline's identity. Reuse its existing implementation and timing:
+
+- The large central CLEARLINE word softly fades in.
+- The new logo replaces the old logo above the word and keeps the corresponding entrance treatment.
+- The fine line beneath CLEARLINE fades/reveals as it does now.
+- The small light dot travels across the word and resolves into an arrow at the right-hand end.
+- Preserve the original sequence, easing and settled arrow state. The dot-to-arrow finish must remain; do not substitute a permanently looping dot.
+
+The recording is the visual reference and the existing code is the source of truth for timing and behaviour. Earlier concept mockups were layout explorations; do not copy their approximate animation.
+
+Adapt colour and measurements for the new white background and any font change. Keep the small white/light dot visible using a restrained blue halo, and keep the underline and arrow blue. Position the dot and arrow relative to the measured word width, including on mobile, rather than retaining coordinates tied to the old font. Reserve space for the arrow without shifting the centred title.
+
+Retain the slow brand entrance without making the menu or CTAs wait behind a blocking intro. Honour prefers-reduced-motion by showing the completed title, line and arrow immediately with all content available.
+
+4. VISUAL DIRECTION AND HERO
+
+Create a clean, premium business improvement consultancy homepage:
+
+- Pure white main background (#FFFFFF), navy text and restrained royal-blue accents. The artwork's blue should feel connected to the rest of the page. Use existing agreed brand tokens where available; otherwise #0A1738 and #1538BD are sensible working navy/blue values.
+- Replace the futuristic title font with a clean consultancy sans serif such as Inter. Prefer an appropriate existing font if already installed. Keep CLEARLINE distinctive through scale and restrained letter spacing, while preserving its animation.
+- Scope the new styling to Home and any explicitly required Home navigation variant. Do not restyle the other pages through broad global selectors in this pass.
+- Remove the visible top header bar and small corner branding from Home. Keep just the blue hamburger menu in the top right, with an adequately sized touch target and existing navigation links.
+- Keep the hero centred across the page. The new logo sits just above CLEARLINE, and CLEARLINE is the largest text element.
+- Keep the heading, tagline, copy and buttons as real responsive HTML text and controls, separate from the artwork.
+- Use generous but controlled spacing. Do not add an empty full-screen intro, oversized spacer or mandatory 100vh section that pushes the useful content away.
+
+Use this exact hero wording, in this order:
+
+CLEARLINE
+
+Connect. Automate. Advance.
+
+Business should flow. We help clear the way.
+
+Clearline improves processes, connects systems and automates repetitive work — giving your team better visibility, more time and a simpler way to get things done.
+
+Keep the supporting sentence "Business should flow. We help clear the way." clearly smaller than CLEARLINE. Remove "Future Systems Architect" from Home.
+
+Then show two compact buttons, centred and side by side where they comfortably fit:
+
+- Request a Free Business Review → /contact
+- See How We Help → /systems
+
+The primary button is royal blue with white text. The secondary is a restrained blue outline/text treatment. Make their widths fit the wording with modest padding; do not stretch them across the page or give them flex: 1. On small phones they can wrap or stack at their natural widths. Keep touch targets approximately 44 pixels high.
+
+5. COMBINED OUTCOMES AND ARTWORK SECTION
+
+Immediately below the CTAs, make ONE flowing section with four staggered outcome panels on the LEFT and my portrait journey artwork on the RIGHT. This replaces the previous layout where the outcomes sat in a separate strip below the image.
+
+Desktop/tablet where space permits:
+
+- Use a balanced two-column composition. Allow the artwork enough width to show the road, sunrise and all five markers clearly. Account for the white area already built into the image so the illustrated portion does not end up squeezed into a narrow strip.
+- Put the heading WHAT BETTER LOOKS LIKE above the left-hand group.
+- Display the four outcomes vertically with modest horizontal offsets. Use light, understated panels or open rows, a consistent blue line icon, a short heading and the agreed explanation. Keep the visual rhythm calm and the text aligned within each panel.
+- All four outcomes must be visible without selecting anything. They are informational panels, not interactive tabs, accordions or a carousel.
+- Fit the outcome group and artwork into the same vertical composition. Keep the gap from the CTAs small enough that the artwork naturally begins beneath the central hero.
+- Blend the top and left edges of the artwork into the white page with a soft blue atmospheric transition. Use presentation-only masks/overlays, following the curved boundary as necessary, to soften the existing thin boundary line and avoid a hard vertical split.
+- Confine the soft transition to the boundary and background. Keep the road, icons and mountain sunrise crisp and fully legible. Do not blur the image, wash out the markers or hide a stage behind a panel.
+- Preserve the original image ratio. Do not stretch, mirror or aggressively crop it. Avoid parallax or extra particle effects.
+
+Use this EXACT outcome copy; only the placement is changing:
+
+WHAT BETTER LOOKS LIKE
+
+More time back
+Reduce repetitive admin so your team can spend more time on higher-value work.
+
+Clearer visibility
+Bring key information together so you can see what is happening and make better-informed decisions.
+
+Consistent processes
+Create clear, reliable ways of working that reduce errors and reliance on individual knowledge.
+
+Ready for growth
+Put scalable processes and systems in place to support the next stage of your business.
+
+Use consistent line icons from the project's existing icon library, for example clock, eye, workflow and upward trend. These four benefits are separate from the five methodology stages; do not number the benefits or connect them one-to-one with the journey markers.
+
+The five markers are already correctly embedded in the Canva image. Do not add another layer of icons. From closest/largest to farthest/smallest their order is Discover (compass), Design (pencil), Deliver (cube), Enable (network), Improve (graph).
+
+On mobile:
+
+- Keep logo, centred title, tagline, supporting copy and the two compact CTAs first.
+- Stack the artwork and outcome group rather than forcing two narrow columns. The artwork follows the CTAs, then the four outcome rows follow it.
+- Remove horizontal staggering at narrow widths. Keep outcome text comfortably readable and the illustration at a useful width with all five markers present.
+- Keep the hamburger clear of the title and logo. Avoid sideways scrolling, clipping, large blank gaps or content hidden behind animations.
+
+Keep the page short: hero, this combined outcomes/artwork section, and the existing required footer links. Do not add service catalogues, technology logos, detailed methodology descriptions, invented testimonials or extra sales sections.
+
+6. PROTECT THE WORKING SITE FUNCTIONALITY
+
+- Preserve all existing routes and their components. Home is /. How We Help remains /systems, implemented in client/src/pages/Systems.tsx. Business Review remains /contact, implemented in client/src/pages/Contact.tsx. Inspect and retain the existing About route.
+- Keep the menu labels Home, About, How We Help and Business Review. Preserve working open/close and navigation behaviour; make its Home appearance fit the white/blue design, including the expanded menu. Keep keyboard focus handling, Escape-to-close, accessible names and visible focus states.
+- Preserve client/index.html and its site-wide Google Analytics 4 installation, measurement ID G-VPNCR4CPZX.
+- Preserve the Meta Pixel installation, ID 1341561034708209, including its existing PageView behaviour.
+- Preserve the Formspree endpoint https://formspree.io/f/mnjywrjg and the working enquiry form, validation, success and error handling.
+- Preserve fbq('track', 'Lead') in Contact.tsx after a successful submission. Do not duplicate it or move it to a CTA click.
+- Do not redesign Contact/Business Review or any other page yet. Preserve privacy/cookie behaviour and existing required footer links.
+- Do not add new analytics scripts, replace the form with a booking widget, change the framework, reset package configuration or rebuild the project from scratch.
+- Use British spelling throughout.
+
+7. VERIFY, PUBLISH AND SHOW THE LIVE RESULT
+
+- Run the existing build/type checks appropriate to this project. Fix issues introduced by the change; report pre-existing blockers separately.
+- Inspect desktop (approximately 1440 pixels), tablet (768 pixels) and phone (390 and 320 pixels) layouts. Confirm that both images really load in development and the production build paths, all five markers remain visible, and no panels or buttons overflow.
+- Compare the entrance sequence with the recording, especially the fade, line and completed arrow. Check the reduced-motion state.
+- Check menu open/close, keyboard operation, both CTA destinations and existing routes. Verify that protected integration code is unchanged. Do not generate real enquiries or production Lead events as a test.
+- After the checks pass, commit and push the intended changes through the existing production workflow so Vercel deploys the updated homepage. Do not publish unrelated pending changes or bypass required branch protections.
+- Check the deployment status and verify the updated homepage at https://clear-line.io, including its images, menu and CTA destinations. Report the live URL, deployment result, commit/checkpoint and a short account of the checks performed. Include desktop and mobile screenshots if available.
+- If deployment fails, fix failures caused by this change and retry through the same pipeline. If access is unavailable or deployment status cannot be verified, clearly distinguish completed code changes from a verified live update and tell me the exact remaining action. Do not claim the site is live without verifying it.
+- Deliver the updated live homepage without waiting for the other pages to match. About, How We Help and Business Review will follow as separate updates.
