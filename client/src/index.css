@@ -118,14 +118,17 @@
   align-items: center;
   justify-content: center;
   margin: 2rem auto 0.25rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .home-logo-frame img {
-  width: 100%;
+  width: 80%;
   height: auto;
-  max-width: none;
+  max-width: 100%;
+  object-fit: contain;
   filter: drop-shadow(0 0 15px rgba(0, 220, 230, 0.14));
+  position: relative;
+  top: -20px;
   transform: scale(1.4) translateY(0.5rem);
 }
 
@@ -380,6 +383,7 @@
   }
 
   .home-logo-frame img {
+    top: -12px;
     transform: scale(1.4) translateY(0.4rem);
   }
 
