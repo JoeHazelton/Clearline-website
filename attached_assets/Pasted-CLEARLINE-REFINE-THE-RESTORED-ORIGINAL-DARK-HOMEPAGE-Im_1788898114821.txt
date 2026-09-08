@@ -1,0 +1,109 @@
+CLEARLINE — REFINE THE RESTORED ORIGINAL DARK HOMEPAGE
+
+Implement the changes below in the existing Clearline project, then publish the finished homepage through its existing GitHub → Vercel setup at clear-line.io.
+
+CONTEXT AND STARTING POINT
+
+I used Git's Restore All on the pre-redesign commit d9d72df and have checked that the original dark homepage has returned in Replit Preview. The current restored working files are the approved starting point. This brief supersedes the earlier white-homepage redesign brief.
+
+First inspect the working tree and capture the restored homepage at desktop and mobile sizes, including its entrance animation. Save the restored state as a checkpoint/Git commit before editing, with a clear message such as "Preserve restored original dark homepage". If an identical commit already records this working state, retain its identifier instead. Do not discard restored working files or pull the white redesign over them while preparing this checkpoint.
+
+Make focused edits to the existing components. Preserve the original homepage's background, visual identity and animation implementation. Do not rebuild the hero from screenshots or substitute a newly approximated animation.
+
+Keep the existing project folder structure. The temporary handover folder disappeared during restoration and should not be recreated. Store the new logo directly in client/public/clearline-logo.png. Do not create extra handover, backup-asset or design-document folders in the project; use Git/checkpoints for recovery and keep temporary verification captures outside the tracked source tree.
+
+PRESERVE THE ORIGINAL HERO
+
+Retain the existing dark background, subtle teal glow, centred composition, original CLEARLINE wordmark font and white lettering, cyan hamburger menu, fading line beneath CLEARLINE, and moving dot that finishes as the arrow on the right.
+
+Preserve the animation sequence, timing, easing, movement and original responsive behaviour. Keep the animated title as the centrepiece and largest text element. Retain existing reduced-motion support.
+
+Preserve the original layout proportions wherever possible. Allow only the additional space needed by the agreed new wording and the section beneath it; do not shrink mobile text to force everything into one screen. Keep menu behaviour and existing navigation.
+
+1. REPLACE THE LOGO ABOVE CLEARLINE
+
+Use the supplied transparent PNG at exactly client/public/clearline-logo.png. Confirm it exists and is the new supplied mark. If it is missing, ask me to upload it to that exact location before replacing the logo. Do not draw, generate or approximate a replacement, duplicate it into another asset folder, or recreate the old handover folder.
+
+Inspect the existing Vite root, publicDir and base configuration. With client/public as the public directory and the site served at the domain root, reference the image in the homepage as /clearline-logo.png, not /client/public/clearline-logo.png. Respect any existing base-path handling and verify that the image resolves in both Preview and the production build without changing the project's folder configuration.
+
+Before replacing or deleting any old logo file, identify its exact filename and search for all references, including other pages, shared components, CSS, favicon/manifest entries and metadata. Update the homepage logo reference to the new asset. After the new logo works, remove only the specific old homepage logo asset if it is now unused and preserved in Git. If other pages or metadata still need the old asset, retain it and explain why; do not change their branding as part of this homepage task. Do not bulk-delete files from client/public or remove unrelated assets. If the supplied filename already replaced a shared asset, inspect its previous version and dependencies before making further changes.
+
+Replace the original logo in its existing position above CLEARLINE. Give the new mark similar visual weight to the original, preserve its aspect ratio, and use the existing logo entrance/fade wrapper and timing. Keep the coloured strands and opaque white central section intact.
+
+Check that the navy strand remains visible on the dark background. Retain the existing subtle glow; adjust only the local glow behind the logo if necessary for separation. Do not recolour the logo or add a rectangular background.
+
+2. UPDATE THE HERO WORDING
+
+Below CLEARLINE and its animated line, use this exact content and order:
+
+Tagline:
+Connect. Automate. Advance.
+
+Supporting headline:
+Business should flow. We help clear the way.
+
+Supporting paragraph:
+Clearline improves processes, connects systems and automates repetitive work — giving your team better visibility, more time and a simpler way to get things done.
+
+The tagline must be soft silver #C0C6CC, with subtle letter spacing. It must not be cyan.
+
+Set the supporting headline in soft white, medium weight, distinctly smaller than CLEARLINE. Set the paragraph in readable light grey with comfortable line spacing and a sensible centred maximum width.
+
+Use a clean, non-condensed sans-serif for supporting text, button labels and outcome panels. Prefer an appropriate existing project font or the system sans-serif stack. Keep the original CLEARLINE font itself. Scope typography changes to these homepage elements so other pages and the navigation retain their styling.
+
+The settled supporting text and button labels should be brighter and easier to read than the original faint grey copy. Preserve the entrance atmosphere without leaving text at a permanently low opacity.
+
+3. RETAIN THE ORIGINAL SMALL CIRCULAR ARROW BUTTONS
+
+Keep the old compact controls: text labels above thin grey outlined circular buttons containing small grey arrows. Preserve their original styling, with brighter readable labels and existing interaction behaviour. Do not introduce large filled rectangular buttons.
+
+Use these exact labels in this order:
+See how we help
+Free business review
+
+Link the first to the existing How We Help page and the second to the existing Business Review page. Inspect the actual existing routes rather than guessing URLs. Keep the controls side by side wherever they fit comfortably. Make each complete label-and-circle control clickable, keyboard accessible and comfortably tappable, with visible focus.
+
+4. ADD THE OUTCOME SECTION BELOW THE HERO
+
+Use the heading:
+What better looks like
+
+Keep the section centred and give it a slightly lighter charcoal background than the hero, with a gentle visual transition. Use four compact panels with subtle grey borders, cyan line icons, white headings and light-grey descriptions.
+
+Use four equal panels across on wide desktop screens, a two-column grid at intermediate widths, and one column on narrow mobile screens. Keep all four panels visible as normal content, without tabs, a carousel or staggered offsets.
+
+Use this exact wording:
+
+More time back
+Reduce repetitive admin so your team can spend more time on higher-value work.
+Icon: clock.
+
+Clearer visibility
+Bring key information together so you can see what is happening and make better-informed decisions.
+Icon: eye.
+
+Consistent processes
+Create clear, reliable ways of working that reduce errors and reliance on individual knowledge.
+Icon: connected shapes/process links.
+
+Ready for growth
+Put scalable processes and systems in place to support the next stage of your business.
+Icon: upward-trending graph.
+
+Reuse the existing icon library where available. These are four client benefits, not the five scored assessment areas of the Business Efficiency Review. Do not add assessment claims, detailed services, methodology content or extra homepage sections.
+
+5. PARK THE JOURNEY ARTWORK
+
+Do not render the mountains/road/journey-icons artwork anywhere on this homepage. The temporary artwork upload disappeared during restoration; it is not required for this task. Do not ask me to re-upload it, recreate its folder, or add a placeholder. If another copy already exists elsewhere in the project, leave it untouched. The outcome section now occupies the available width beneath the hero.
+
+CHECK AND PUBLISH
+
+Keep the existing routes, other pages, Google Analytics, Meta Pixel, Formspree configuration and Lead tracking intact. Limit shared-file changes to those strictly necessary for this homepage; verify that other pages retain their existing appearance.
+
+Run the project's existing build and relevant checks. Compare the completed hero with the captured restored baseline at desktop and mobile sizes. Verify the original title/font, background, logo fade, line, moving dot-to-arrow sequence and small circular controls are preserved. Confirm that differences are limited to this brief. Check text contrast, overflow, logo transparency, all four panels, menu navigation, both CTA destinations, and that the existing enquiry form still loads correctly. Do not send a live test enquiry.
+
+Commit the refinements separately from the preserved restored baseline. Publish through the existing configured GitHub repository and Vercel production branch. Preserve shared Git history and do not force-push. If the rollback left local history behind or divergent, preserve the reviewed working files and incorporate their final state as a new commit on the current production history without reintroducing the white redesign.
+
+Use the existing source-control connection. If publishing is blocked, report the actual Git or deployment error and the precise remaining step. Do not repeat an unrelated GitHub (App) connection request when the source-control connection works.
+
+After deployment, verify the successful deployment belongs to the final commit and check clear-line.io where access allows. Report separately what was verified in Preview and on the live domain. Include the preserved baseline commit and final change commit, confirm the logo's source path is client/public/clearline-logo.png, and state whether the exact old logo asset was removed or retained because it is still referenced. For a removed asset, identify the recovery commit. Do not claim the site is live unless that is verified.
