@@ -20,7 +20,9 @@ export default function Navigation() {
     <>
       <button
         onClick={toggleMenu}
-        className="fixed top-6 right-6 z-50 p-2 text-primary hover:text-white transition-colors mix-blend-difference cursor-pointer"
+        className={`fixed top-6 right-6 z-50 p-2 text-primary hover:text-white transition-colors mix-blend-difference cursor-pointer ${
+          location === "/about" ? "about-navigation-toggle" : ""
+        }`}
         aria-label="Toggle Menu"
         data-testid="button-menu-toggle"
       >

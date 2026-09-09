@@ -265,6 +265,41 @@
   border-color: hsl(var(--primary));
 }
 
+.about-page {
+  padding-top: 6rem;
+  font-family: "Inter", sans-serif;
+}
+
+.about-copy {
+  color: rgba(220, 226, 232, 0.74);
+  font-family: "Inter", sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.about-copy strong {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: rgba(242, 244, 246, 0.92);
+  font-weight: 600;
+}
+
+.about-page .font-sans {
+  font-family: "Inter", sans-serif;
+}
+
+.about-process-icon {
+  display: block;
+}
+
+.about-navigation-toggle {
+  border-radius: 0.45rem;
+  background: rgba(7, 11, 20, 0.78);
+  box-shadow: 0 0.35rem 1rem rgba(0, 0, 0, 0.22);
+  mix-blend-mode: normal !important;
+  backdrop-filter: blur(8px);
+}
+
 .home-outcomes {
   position: relative;
   flex: 0 0 auto;
@@ -367,6 +402,10 @@
 }
 
 @media (max-width: 600px) {
+  .about-page {
+    padding-top: 7rem;
+  }
+
   .home-hero {
     min-height: 0;
     padding: 4rem 1rem 4.5rem;
