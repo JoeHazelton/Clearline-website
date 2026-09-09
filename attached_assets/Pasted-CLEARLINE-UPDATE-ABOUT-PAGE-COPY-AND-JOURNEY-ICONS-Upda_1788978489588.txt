@@ -1,0 +1,116 @@
+CLEARLINE — UPDATE ABOUT PAGE COPY AND JOURNEY ICONS
+
+Update the existing About Clearline page in this Replit project using the approved copy and supplied SVGs below. The homepage is finished and approved. Preserve its current appearance, logo positioning, wording and animations.
+
+FIRST SAVE AND INSPECT
+
+Inspect the current working tree, actual About route/component, existing card styles and icon dimensions. Save a checkpoint/Git commit before editing. Capture the current About page on desktop and mobile for comparison. Use the existing project structure and keep temporary comparison images outside tracked source files. Do not create a new handover folder or upload-pack folder in the project.
+
+PRESERVE THE FIVE BOXES
+
+The user explicitly loves the existing five methodology boxes. Preserve their size, padding, layout, responsive arrangement, background colours, borders, accent colours and hover behaviour. Replace only their icon assets and approved text. Change the third stage label from Implement to Deliver.
+
+Use the original distinctive heading treatment and dark-page styling. Improve body-copy readability with the clean sans-serif and readable light-grey treatment established on the approved homepage, scoped to About. Avoid global typography changes. Keep descriptions readable within existing boxes; do not shrink text or truncate it to fit. If an actual narrow-screen overflow prevents preserving the current sizing, make only the minimum necessary responsive height adjustment and report it.
+
+NEW ICON FILES
+
+The user will upload these five prepared SVGs directly into client/public:
+
+Discover — client/public/clearline-discover-compass.svg
+Design — client/public/clearline-design-pencil.svg
+Deliver — client/public/clearline-deliver-cube.svg
+Enable — client/public/clearline-enable-connected-nodes.svg
+Improve — client/public/clearline-improve-rising-bar-chart.svg
+
+Confirm all five exist before implementation. If any are missing, identify the exact missing filenames; do not substitute stock icons or regenerate the designs.
+
+Inspect the existing Vite root, publicDir and base configuration. With client/public as the public directory and the site at the domain root, use /clearline-discover-compass.svg and the corresponding root-relative URLs for the other icons. Respect existing base-path handling without restructuring the project.
+
+These are genuine SVGs containing the user's exact vector shapes, transparent backgrounds, intentional opaque white interior details and normalised square viewBoxes. Preserve all paths, clipping definitions, aspect ratios and internal white details. Do not add white circular badges, glow beams or the landscape artwork.
+
+The SVGs use fill="currentColor" for their coloured shapes and a root color attribute for standalone rendering. The supplied root colours are preview defaults. Read the actual existing colour token/value used by each current box's icon and update only the matching SVG's root color attribute to that exact colour: Discover cyan, Design purple, Deliver green, Enable amber/gold, Improve blue. Do not change the boxes' colours to match the preview defaults.
+
+Render each image at the existing icon slot's width/height, with object-fit: contain and no clipping. The SVGs' default width and height of 32 are not an instruction to enlarge the current icon slots. Keep the visual alignment of each icon consistent with the original layout. An external SVG displayed with img does not inherit the parent page's CSS currentColor, so set the colour in the SVG itself. Do not apply a monochrome CSS mask or filter, which would lose or recolour the white interior details. Keep the icons decorative with empty alt text when the adjacent stage label already communicates their meaning.
+
+EXACT APPROVED COPY
+
+Replace the existing About sections with the following content, in this order. Preserve the wording and punctuation. Headings should use the established white/cyan styling. Do not add claims about qualifications, years of experience, clients, results or testimonials.
+
+About Clearline
+
+Clearline helps small and medium-sized businesses make everyday work simpler, more connected and easier to manage.
+
+We improve processes, connect systems and information, and reduce repetitive admin — helping teams save time, gain clearer visibility and work with greater consistency. Our approach combines practical operational experience with technology, automation and AI where they add value.
+
+Why Clearline Exists
+
+Business improvement can feel like another project competing for time and attention. Clearline exists to make it practical and achievable.
+
+We start by understanding how your business actually works: the people involved, the pressures they face and the priorities that matter most. From there, we identify useful improvements and shape them around your team, resources and goals.
+
+The aim is to introduce changes people can understand, use confidently and sustain as the business develops.
+
+How We Work
+
+Our five-stage approach takes improvements from the initial conversation through to everyday use and ongoing refinement.
+
+Discover
+Understand your business, your people and how work gets done, identifying the priorities and opportunities that matter most.
+
+Design
+Shape practical improvements around your processes, systems and goals, with a clear plan for putting them into place.
+
+Deliver
+Put the agreed improvements into practice, testing them carefully and managing the transition into everyday operations.
+
+Enable
+Help your team adopt new ways of working through clear guidance, practical training and hands-on support.
+
+Improve
+Review what is working, gather feedback and refine the approach as your business and its needs evolve.
+
+What Guides Our Work
+
+People first
+Systems and processes should make everyday work easier. We involve the people who use them and help teams build confidence through change.
+
+Practical improvements
+Every recommendation should address a clear business need. We focus on changes that are useful, proportionate and manageable with the resources available.
+
+Clear communication
+You should understand what we recommend, why it matters and what is involved. We keep explanations straightforward and make priorities and trade-offs clear.
+
+Built to adapt
+We consider how improvements will be maintained and developed over time, helping your processes and systems keep pace with the business.
+
+Who's Behind Clearline
+
+I’m Joey, the founder of Clearline. My background spans operations, project delivery, process improvement, reporting and business systems.
+
+I’ve worked closely with stakeholders and IT teams to improve workflows, introduce applications and support people through changes to the way they work. That experience has shaped my approach: understand the day-to-day reality, involve the people affected and make improvements that work in practice.
+
+Through Clearline, I bring that approach to business owners and teams who want clearer information, smoother operations and more time to focus on their priorities.
+
+Let’s Talk About Your Business
+
+If everyday processes, disconnected systems or repetitive admin are getting in the way, a free business review is a useful place to start.
+
+We’ll discuss how your business works, where the main frustrations sit and which improvements may be worth exploring.
+
+CTA label: Free business review
+
+LAYOUT DETAILS
+
+Add How We Work as a section heading and introduction directly before the existing five boxes. Replace Values & Philosophy with What Guides Our Work and use four short labelled paragraphs, without introducing another set of large cards. Use the approved founder text without adding an unprovided photo. Replace the old generic closing statement with the approved invitation and CTA. Link the CTA to the actual existing Business Review route, using the same compact grey circular-arrow style as the approved homepage.
+
+In the mobile recording the fixed hamburger overlaps body text during scrolling. Give the About page sufficient clearance or a restrained dark backing for that control, keeping its cyan appearance, position, navigation and keyboard operation. Scope any change to About so the approved homepage menu is unaffected.
+
+Keep this a focused About-page update. Preserve the existing routes, other pages, Google Analytics, Meta Pixel, Formspree configuration and Lead tracking. Remove only unused icon imports from the About component; do not delete unrelated shared icons or assets.
+
+CHECK AND PUBLISH
+
+Run the existing build and relevant checks. Verify desktop and mobile: all five exact SVGs load in their original icon slots, their colours match the original boxes, interior white details remain, nothing clips, the approved copy is complete, cards retain their established appearance, and the CTA and menu work. Check the homepage against its saved baseline to ensure it has not changed. Check that the existing enquiry form still loads; do not send a live test enquiry.
+
+Commit the About changes and publish through the existing GitHub → Vercel production workflow at clear-line.io. Preserve shared Git history; do not force-push or reset the finished homepage. Use the existing source-control connection. If access blocks publication, report the actual error and exact remaining action without repeatedly opening an unrelated connector prompt.
+
+Verify the deployment belongs to the final commit and check the live About page where access allows. Report what was checked in Preview separately from live verification, identify the checkpoint and final commit, and report any unavoidable responsive size adjustment. Do not claim publication succeeded unless verified.
