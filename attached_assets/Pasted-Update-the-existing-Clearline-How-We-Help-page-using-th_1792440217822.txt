@@ -1,0 +1,234 @@
+Update the existing Clearline “How We Help” page using the approved content and design instructions below.
+
+Implement this in the existing project, then check and publish through the established GitHub → Vercel workflow.
+
+## 1. Scope and preparation
+
+Inspect the current page, routing, shared components and styling before editing. The page may still use a filename associated with its former “Systems & Tools” title; identify it from the existing route.
+
+Record the current Git commit and preserve a rollback checkpoint before making changes. Preserve any unrelated work already present.
+
+Keep:
+- The existing page URL and navigation links.
+- The completed homepage and How We Work/About page.
+- The existing logo, homepage animation and journey icons on their current pages.
+- Google Analytics, Meta Pixel, Formspree and existing enquiry tracking.
+- The current deployment configuration.
+
+Keep changes focused on How We Help. Scope any new styles to this page so they do not alter the completed pages.
+
+## 2. Visual direction
+
+Use the established dark Clearline appearance:
+- Deep charcoal/navy background with a restrained teal glow near the opening.
+- White headings and readable silver-grey body text.
+- Cyan used sparingly for icons, small details and the existing hamburger menu.
+- Existing heading fonts and a clear, readable body font.
+- Rounded dark service cards with subtle borders and consistent padding.
+- Comfortable spacing without excessive empty areas.
+
+Keep the hamburger in the top-right with enough clearance to prevent it overlapping headings or content on mobile. Preserve its working navigation.
+
+Use the homepage’s compact “Free business review” button treatment, including its small grey circular arrow. Keep the label readable and the whole control easy to tap.
+
+Use the project’s existing icon library for the service icons. Choose suitable line icons for process improvement, automation, reporting, AI prompts and training. Ensure every icon renders correctly.
+
+## 3. Page structure
+
+Build the page in this order:
+
+1. Centred opening: page title, supporting headline, introductory paragraph and review button.
+2. Five service cards beneath “Practical support for your business”.
+3. A compact tools and platforms section.
+4. A closing invitation with a second review button.
+
+Desktop:
+- Place the first four service cards in a two-column grid.
+- Row one: Business Process Improvement; Workflow Automation.
+- Row two: Business Systems & Reporting; Practical AI & Prompt Templates.
+- Place AI Workshops & Team Training across the full width beneath them.
+- Within the wide training card, place the description on the left and the three examples on the right.
+- Keep the main content centred within a comfortable maximum width.
+
+Mobile:
+- Stack all five cards in the same reading order.
+- Place each card’s examples underneath its description.
+- Let text and headings wrap naturally without clipping.
+- Keep all service information visible; no carousels or accordions.
+
+Each service card should have a small icon, heading, paragraph and three bullet points. A subtle divider can separate the paragraph from the examples.
+
+## 4. Exact page wording
+
+Use the following wording as written.
+
+### Opening
+
+Page title:
+How We Help
+
+Supporting headline:
+Make everyday work easier.
+
+Paragraph:
+Repetitive admin, disconnected systems and scattered information can take time away from running your business. Clearline helps you improve how work gets done — with clearer processes, useful technology and practical support for your team.
+
+Button:
+Free business review
+
+### Services section
+
+Section heading:
+Practical support for your business
+
+CARD 1
+
+Heading:
+Business Process Improvement
+
+Paragraph:
+Make the steps, responsibilities and handovers in your business clearer. We help identify bottlenecks, reduce duplicated effort and create practical ways of working that your team can follow consistently.
+
+Bullet points:
+- Review and simplify everyday workflows.
+- Improve handovers between people and teams.
+- Create clear procedures, checklists and templates.
+
+CARD 2
+
+Heading:
+Workflow Automation
+
+Paragraph:
+Reduce the manual steps that slow your team down. We help connect routine tasks and information flows so work moves forward with less chasing, copying and repetitive updating.
+
+Bullet points:
+- Automate reminders, notifications and approvals.
+- Connect forms, enquiries and records.
+- Reduce repeated data entry across tools.
+
+CARD 3
+
+Heading:
+Business Systems & Reporting
+
+Paragraph:
+Bring information together and make it easier to understand what is happening across your business. We help organise your systems, improve information flows and build reporting around the decisions you need to make.
+
+Bullet points:
+- Create useful dashboards and business trackers.
+- Improve how information is captured and maintained.
+- Organise shared documents and team knowledge.
+
+CARD 4
+
+Heading:
+Practical AI & Prompt Templates
+
+Paragraph:
+Give your team useful, repeatable ways to apply AI to their work. We create reusable prompt templates around your business tasks, from everyday drafting to more detailed analysis and planning.
+
+Bullet points:
+- Everyday templates for emails, meeting summaries and first drafts.
+- Advanced templates with defined inputs, instructions and output formats.
+- Practical examples and guidance on checking and refining results.
+
+CARD 5 — FULL WIDTH ON DESKTOP
+
+Heading:
+AI Workshops & Team Training
+
+Paragraph:
+Help your team use AI and business systems with greater confidence. Our practical sessions are delivered face-to-face or live online, with exercises shaped around your team’s experience and everyday work.
+
+Bullet points:
+- Introductory AI sessions covering useful prompts and reviewing responses.
+- Advanced workshops building reusable templates for specific team tasks.
+- Training and guidance to support new systems and ways of working.
+
+### Tools and platforms section
+
+Replace the existing large platform cards with a compact section. Use three simple text groups on desktop, stacking neatly on mobile. Keep this section visually secondary to the services.
+
+Heading:
+Working with the tools you already use
+
+Paragraph:
+We help you get more from everyday business software and AI tools, and explore practical options when something new could help. Our recommendations are shaped around your business, your team and the work that needs to get done.
+
+Group 1 heading:
+Microsoft
+
+Examples:
+Microsoft 365 · Excel · Teams
+SharePoint · Power BI · Power Automate
+
+Group 2 heading:
+Google
+
+Examples:
+Google Workspace · Docs · Sheets
+Drive · Forms · Meet
+
+Group 3 heading:
+AI & connected workspaces
+
+Examples:
+ChatGPT · Microsoft Copilot
+Gemini · Notion
+
+Closing paragraph:
+These are just a few examples. We can also help you explore a wider range of commonly used business, collaboration and automation tools — with the right approach guided by your needs, rather than a fixed list of platforms.
+
+Give “These are just a few examples.” slightly stronger emphasis. This wording is important: the named products are examples, not a restriction on Clearline’s offering.
+
+Use text rather than a large collection of platform logos. Do not add partnership or certification claims.
+
+### Closing review invitation
+
+Heading:
+Not sure where to start?
+
+Paragraph 1:
+You don’t need to know which service you need. Our free business review is a starting point for discussing what is slowing your business down and where practical improvements could help.
+
+Paragraph 2:
+Tell us a little about your business using the form. We’ll get in touch to arrange a conversation, understand your priorities and explore suitable next steps.
+
+Button:
+Free business review
+
+## 5. Buttons and behaviour
+
+Find the real review-form destination already used by the homepage.
+
+Both “Free business review” buttons on this page must open that same destination directly. Use the existing routing and tracking conventions.
+
+Preserve the working contact form and submission behaviour. A review-button click must not be recorded as a completed enquiry unless that is already the intended, correctly named event.
+
+This is the real website implementation. Do not include mock-up controls such as Desktop/Mobile switches, “preview only” messages or placeholder button actions.
+
+Preserve the existing footer and any appropriate page entrance effects. Respect reduced-motion preferences.
+
+## 6. Check and publish
+
+Before publishing:
+- Run the project’s existing relevant checks and production build.
+- Check the page at mobile, tablet and desktop widths.
+- Confirm the service cards follow the specified order and responsive layout.
+- Confirm text, icons and buttons render without clipping or horizontal overflow.
+- Confirm the hamburger opens correctly and does not overlap the heading.
+- Confirm both review buttons reach the existing form.
+- Check that the completed homepage and How We Work/About page retain their existing appearance and behaviour.
+
+Once these checks pass, commit the intended changes and publish through the existing GitHub → Vercel workflow. Keep the current hosting setup and avoid force-pushing.
+
+Verify the updated How We Help page at its actual public URL under clear-line.io.
+
+Finish with a short report covering:
+- What changed.
+- Which checks passed.
+- The published page URL.
+- The rollback commit/checkpoint.
+
+If publishing is blocked, report the exact blocker and distinguish saved local changes from a verified live deployment.
